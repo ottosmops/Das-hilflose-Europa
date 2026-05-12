@@ -443,7 +443,7 @@
             <author ref="#pers_nietzsche">Friedrich Nietzsche</author>:
             <title level="m">Unzeitgemässe Betrachtungen</title>.
             <date from="1873" to="1876">1873–1876</date>.
-            <note resp="#claude">Vier kulturkritische Essays gegen den Bildungsphilister und das Geschichtsverständnis des wilhelminischen Zeitalters.</note>
+            <note resp="#claude">Vier kulturkritische Essays gegen den von Nietzsche so genannten „Bildungsphilister" (den gebildeten Bürger, der angeeignete Kultur mit gelebter verwechselt) und das Geschichtsverständnis des wilhelminischen Zeitalters.</note>
          </bibl>
          <bibl xml:id="bibl_nutzen">
             <author ref="#pers_nietzsche">Friedrich Nietzsche</author>:
@@ -484,7 +484,7 @@
             <author ref="#pers_curtius">Ernst Robert Curtius</author>:
             <title level="m">Der Syndikalismus der geistigen Arbeiter in Frankreich</title>.
             Bonn: Cohen, <date when="1921">1921</date>.
-            <note resp="#claude">Aktuelle Studie über die organisierte Selbstvertretung französischer Intellektueller nach dem Ersten Weltkrieg; Curtius warnt darin vor der spezifisch deutschen Diagnose einer „europäischen Kulturkrise". Musil setzt sich im Text mit dieser Warnung auseinander.</note>
+            <note resp="#claude">Aktuelle Studie über die organisierte Selbstvertretung französischer Intellektueller nach dem Ersten Weltkrieg. Curtius zeigt darin – mit Berufung auf französische Stimmen –, dass die in Deutschland verbreitete Deutung des Krieges als tiefe „europäische Kulturkrise" (Stichwort Spenglers <bibl>Untergang des Abendlandes</bibl>, 1918/22) eine spezifisch deutsche Sichtweise sei. Musil greift diese Warnung im Text auf (§ 16), relativiert sie aber: Es komme darauf an, welchen Inhalt man der Vorstellung gebe.</note>
          </bibl>
       </listBibl>
   </standOff>
