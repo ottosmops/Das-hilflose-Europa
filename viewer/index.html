@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Robert Musil – Das hilflose Europa (annotierte Leseansicht)</title>
+  <link rel="stylesheet" href="viewer.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-left">
+      <h1>Das hilflose Europa</h1>
+      <span class="subtitle">Robert Musil · 1922 · annotierte Leseansicht</span>
+    </div>
+    <div class="topbar-right">
+      <input type="search" id="search" placeholder="Volltext durchsuchen …" />
+      <div class="filters">
+        <label class="filter"><input type="checkbox" data-filter="person" checked /> <span class="dot person"></span> Personen</label>
+        <label class="filter"><input type="checkbox" data-filter="place" checked /> <span class="dot place"></span> Orte</label>
+        <label class="filter"><input type="checkbox" data-filter="bibl" checked /> <span class="dot bibl"></span> Werke</label>
+        <label class="filter notes"><span>Anmerkungen:</span>
+          <select id="note-filter">
+            <option value="all">alle</option>
+            <option value="ak">nur ak</option>
+            <option value="claude">nur claude</option>
+            <option value="none">keine</option>
+          </select>
+        </label>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <aside class="index" id="index">
+      <div class="index-section">
+        <h2 data-toggle="persons">Personen <span class="count" id="count-persons">–</span></h2>
+        <ul id="list-persons"></ul>
+      </div>
+      <div class="index-section">
+        <h2 data-toggle="places">Orte <span class="count" id="count-places">–</span></h2>
+        <ul id="list-places"></ul>
+      </div>
+      <div class="index-section">
+        <h2 data-toggle="bibls">Werke <span class="count" id="count-bibls">–</span></h2>
+        <ul id="list-bibls"></ul>
+      </div>
+    </aside>
+
+    <article id="reading" class="reading">
+      <div class="loading">Lade TEI …</div>
+    </article>
+
+    <aside class="detail" id="detail">
+      <div class="detail-empty">
+        <p>Klick auf eine markierte Stelle im Text, um Details aus dem Register anzuzeigen.</p>
+        <p class="legend">
+          <span class="entity entity-person">Person</span>
+          <span class="entity entity-place">Ort</span>
+          <span class="entity entity-bibl">Werk</span>
+        </p>
+      </div>
+    </aside>
+  </main>
+
+  <div id="tooltip" class="tooltip" hidden></div>
+
+  <script src="viewer.js"></script>
+</body>
+</html>

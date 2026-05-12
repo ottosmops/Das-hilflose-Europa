@@ -15,12 +15,479 @@
          </publicationStmt>
          <sourceDesc>
             <bibl n="original">
-               <author>Robert Musil</author>, <title>Das hilflose Europa oder Reise vom hundersten ins Tausendste</title>, in: Ganymed. Ein Jahrbuch für die Kunst 4, <date>1922</date>, S. 217–239.
+               <author><persName ref="#pers_musil">Robert Musil</persName></author>, <title>Das hilflose Europa oder Reise vom hundersten ins Tausendste</title>, in: Ganymed. Ein Jahrbuch für die Kunst 4, <date>1922</date>, S. 217–239.
                <idno type="DOI">https://doi.org/10.11588/diglit.45237.18</idno>
             </bibl>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Semantische Auszeichnung von Personen, Orten und Werken mit
+            Verknüpfungen zu externen Normdaten (GND, Wikidata, GeoNames, VIAF).
+            Die Register sind in <gi>standOff</gi> abgelegt; Inline-Verweise nutzen
+            <att>ref</att> auf die jeweilige <att>xml:id</att>.</p>
+         </projectDesc>
+         <editorialDecl>
+            <p>Der Wortlaut des Originaltextes wurde nicht verändert. Ergänzt wurden
+            ausschließlich <gi>persName</gi>-, <gi>placeName</gi>- und
+            <gi>bibl</gi>-Elemente sowie redaktionelle <gi>note</gi>-Kommentare
+            (kenntlich an <code>resp="#claude"</code>). Die ursprünglich vorhandenen
+            Notes mit <code>resp="ak"</code> wurden inhaltlich überarbeitet und
+            auf das Niveau von Schul- und Studienkommentaren erweitert; sie tragen
+            seither ebenfalls <code>resp="#claude"</code>.</p>
+            <p>Zielpublikum der Notes: gymnasiale Oberstufe / Abiturniveau.
+            Ton: knapp und sachlich (max. 2–3 Sätze), erklärend statt wertend.</p>
+            <p>Für einzelne weniger gut belegte Personen (insbesondere Walter
+            Strich) sind die Identifikatoren mit <code>cert="medium"</code>
+            markiert und sollten nachgeprüft werden.</p>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="de">Deutsch</language>
+            <language ident="la">Latein (vereinzelte Wendungen)</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change when="2026-05-12" who="#claude">Register und Inline-Auszeichnung ergänzt.</change>
+      </revisionDesc>
   </teiHeader>
+  <standOff>
+      <listPerson>
+         <person xml:id="pers_musil">
+            <persName><forename>Robert</forename> <surname>Musil</surname></persName>
+            <birth when="1880-11-06"/>
+            <death when="1942-04-15"/>
+            <note resp="#claude">Österreichischer Schriftsteller, Autor des Essays.</note>
+            <idno type="GND">https://d-nb.info/gnd/118585916</idno>
+            <idno type="Wikidata">https://www.wikidata.org/entity/Q78487</idno>
+            <idno type="VIAF">https://viaf.org/viaf/46799598</idno>
+         </person>
+         <person xml:id="pers_goethe">
+            <persName><forename>Johann Wolfgang</forename> von <surname>Goethe</surname></persName>
+            <birth when="1749-08-28"/>
+            <death when="1832-03-22"/>
+            <note resp="#claude">Bedeutendster Vertreter der Weimarer Klassik; im Essay als Inbegriff der klassisch-humanistischen Bildung zitiert.</note>
+            <idno type="GND">https://d-nb.info/gnd/118540238</idno>
+            <idno type="Wikidata">https://www.wikidata.org/entity/Q5879</idno>
+            <idno type="VIAF">https://viaf.org/viaf/24602065</idno>
+         </person>
+         <person xml:id="pers_kant">
+            <persName><forename>Immanuel</forename> <surname>Kant</surname></persName>
+            <birth when="1724-04-22"/>
+            <death when="1804-02-12"/>
+            <note resp="#claude">Begründer der kritischen Philosophie und Hauptdenker der deutschen Aufklärung.</note>
+            <idno type="GND">https://d-nb.info/gnd/118559796</idno>
+            <idno type="Wikidata">https://www.wikidata.org/entity/Q9312</idno>
+            <idno type="VIAF">https://viaf.org/viaf/82088490</idno>
+         </person>
+         <person xml:id="pers_spinoza">
+            <persName><forename>Baruch</forename> de <surname>Spinoza</surname></persName>
+            <birth when="1632-11-24"/>
+            <death when="1677-02-21"/>
+            <note resp="#claude">Niederländischer Rationalist und Pantheist; prägende Gestalt der frühen Aufklärung.</note>
+            <idno type="GND">https://d-nb.info/gnd/118616242</idno>
+            <idno type="Wikidata">https://www.wikidata.org/entity/Q35802</idno>
+            <idno type="VIAF">https://viaf.org/viaf/22149024</idno>
+         </person>
+         <person xml:id="pers_locke">
+            <persName><forename>John</forename> <surname>Locke</surname></persName>
+            <birth when="1632-08-29"/>
+            <death when="1704-10-28"/>
+            <note resp="#claude">Englischer Empirist und Begründer des klassischen Liberalismus.</note>
+            <idno type="GND">https://d-nb.info/gnd/118573748</idno>
+            <idno type="Wikidata">https://www.wikidata.org/entity/Q9353</idno>
+            <idno type="VIAF">https://viaf.org/viaf/34459614</idno>
+         </person>
+         <person xml:id="pers_hume">
+            <persName><forename>David</forename> <surname>Hume</surname></persName>
+            <birth when="1711-05-07"/>
+            <death when="1776-08-25"/>
+            <note resp="#claude">Schottischer Aufklärer und Skeptiker; einflussreich für Kant und die moderne Erkenntnistheorie.</note>
+            <idno type="GND">https://d-nb.info/gnd/118554735</idno>
+            <idno type="Wikidata">https://www.wikidata.org/entity/Q37160</idno>
+            <idno type="VIAF">https://viaf.org/viaf/49226972</idno>
+         </person>
+         <person xml:id="pers_hebbel">
+            <persName><forename>Christian Friedrich</forename> <surname>Hebbel</surname></persName>
+            <birth when="1813-03-18"/>
+            <death when="1863-12-13"/>
+            <note resp="#claude">Deutscher Dramatiker des 19. Jahrhunderts; Hauptvertreter des bürgerlichen Trauerspiels („Maria Magdalena", „Agnes Bernauer").</note>
+            <idno type="GND">https://d-nb.info/gnd/118547445</idno>
+            <idno type="Wikidata">https://www.wikidata.org/entity/Q57182</idno>
+            <idno type="VIAF">https://viaf.org/viaf/9861617</idno>
+         </person>
+         <person xml:id="pers_kepler">
+            <persName><forename>Johannes</forename> <surname>Kepler</surname></persName>
+            <birth when="1571-12-27"/>
+            <death when="1630-11-15"/>
+            <note resp="#claude">Astronom und Mathematiker; formulierte die nach ihm benannten Gesetze der Planetenbewegung.</note>
+            <idno type="GND">https://d-nb.info/gnd/118561448</idno>
+            <idno type="Wikidata">https://www.wikidata.org/entity/Q8963</idno>
+            <idno type="VIAF">https://viaf.org/viaf/41842150</idno>
+         </person>
+         <person xml:id="pers_sanches">
+            <persName><forename>Francisco</forename> <surname>Sanches</surname></persName>
+            <birth notBefore="1550" notAfter="1551"/>
+            <death when="1623-11-16"/>
+            <note resp="#claude">Portugiesisch-spanischer Arzt und Skeptiker, Verfasser
+            von <bibl>Quod nihil scitur</bibl> (1581); im Text als „der Portugiese Sanchez“
+            bezeichnet.</note>
+            <idno type="GND">https://d-nb.info/gnd/129016004</idno>
+            <idno type="Wikidata">https://www.wikidata.org/entity/Q973196</idno>
+         </person>
+         <person xml:id="pers_galilei">
+            <persName><forename>Galileo</forename> <surname>Galilei</surname></persName>
+            <birth when="1564-02-15"/>
+            <death when="1642-01-08"/>
+            <note resp="#claude">Italienischer Astronom und Physiker; mit dem Fernrohr stützte er das kopernikanische Weltbild und wurde 1633 von der Inquisition zum Widerruf gezwungen.</note>
+            <idno type="GND">https://d-nb.info/gnd/118537229</idno>
+            <idno type="Wikidata">https://www.wikidata.org/entity/Q307</idno>
+            <idno type="VIAF">https://viaf.org/viaf/2470550</idno>
+         </person>
+         <person xml:id="pers_davinci">
+            <persName><forename>Leonardo</forename> da <surname>Vinci</surname></persName>
+            <birth when="1452-04-15"/>
+            <death when="1519-05-02"/>
+            <note resp="#claude">Italienischer Universalgelehrter der Renaissance: Maler, Anatom und Ingenieur.</note>
+            <idno type="GND">https://d-nb.info/gnd/118640445</idno>
+            <idno type="Wikidata">https://www.wikidata.org/entity/Q762</idno>
+         </person>
+         <person xml:id="pers_descartes">
+            <persName><forename>René</forename> <surname>Descartes</surname></persName>
+            <birth when="1596-03-31"/>
+            <death when="1650-02-11"/>
+            <note resp="#claude">Französischer Mathematiker und Philosoph; mit dem Cogito ergo sum Begründer des neuzeitlichen Rationalismus.</note>
+            <idno type="GND">https://d-nb.info/gnd/118524844</idno>
+            <idno type="Wikidata">https://www.wikidata.org/entity/Q9191</idno>
+            <idno type="VIAF">https://viaf.org/viaf/41838958</idno>
+         </person>
+         <person xml:id="pers_koehler">
+            <persName><forename>Wolfgang</forename> <surname>Köhler</surname></persName>
+            <birth when="1887-01-21"/>
+            <death when="1967-06-11"/>
+            <note resp="#claude">Gestaltpsychologe; das im Text erwähnte Buch erschien 1920.</note>
+            <idno type="GND">https://d-nb.info/gnd/118843397</idno>
+            <idno type="Wikidata">https://www.wikidata.org/entity/Q213672</idno>
+         </person>
+         <person xml:id="pers_eucken">
+            <persName><forename>Rudolf Christoph</forename> <surname>Eucken</surname></persName>
+            <birth when="1846-01-05"/>
+            <death when="1926-09-15"/>
+            <note resp="#claude">Idealistischer Philosoph, Literaturnobelpreis 1908.</note>
+            <idno type="GND">https://d-nb.info/gnd/118682555</idno>
+            <idno type="Wikidata">https://www.wikidata.org/entity/Q47695</idno>
+         </person>
+         <person xml:id="pers_curtius">
+            <persName><forename>Ernst Robert</forename> <surname>Curtius</surname></persName>
+            <birth when="1886-04-14"/>
+            <death when="1956-04-19"/>
+            <note resp="#claude">Romanist; Musil bezieht sich auf dessen Schrift
+            zum Syndikalismus der französischen Intellektuellen (1921).</note>
+            <idno type="GND">https://d-nb.info/gnd/118523058</idno>
+            <idno type="Wikidata">https://www.wikidata.org/entity/Q561089</idno>
+            <idno type="VIAF">https://viaf.org/viaf/49241741</idno>
+         </person>
+         <person xml:id="pers_strich" cert="medium">
+            <persName><forename>Walter</forename> <surname>Strich</surname></persName>
+            <birth when="1885"/>
+            <death notBefore="1934" notAfter="1937"/>
+            <note resp="#claude" cert="medium">Mutmaßlich Walter Strich (geb. 1885 in Königsberg),
+            Kulturphilosoph und Bruder des Germanisten Fritz Strich; Verfasser von
+            <bibl>Der irrationale Mensch</bibl> (1928). Die Identifikation ist nicht
+            zweifelsfrei; Musil schreibt „Walther Strich“.</note>
+            <idno type="GND" cert="medium">https://d-nb.info/gnd/117318299</idno>
+         </person>
+         <person xml:id="pers_lessing">
+            <persName><forename>Gotthold Ephraim</forename> <surname>Lessing</surname></persName>
+            <birth when="1729-01-22"/>
+            <death when="1781-02-15"/>
+            <note resp="#claude">Dramatiker und Hauptdenker der deutschen Aufklärung („Nathan der Weise").</note>
+            <idno type="GND">https://d-nb.info/gnd/118572121</idno>
+            <idno type="Wikidata">https://www.wikidata.org/entity/Q34628</idno>
+            <idno type="VIAF">https://viaf.org/viaf/9849550</idno>
+         </person>
+         <person xml:id="pers_newton">
+            <persName><forename>Isaac</forename> <surname>Newton</surname></persName>
+            <birth when="1643-01-04"/>
+            <death when="1727-03-31"/>
+            <note resp="#claude">Englischer Physiker und Mathematiker; Begründer der klassischen Mechanik und der Gravitationstheorie.</note>
+            <idno type="GND">https://d-nb.info/gnd/118587544</idno>
+            <idno type="Wikidata">https://www.wikidata.org/entity/Q935</idno>
+            <idno type="VIAF">https://viaf.org/viaf/22146457</idno>
+         </person>
+         <person xml:id="pers_plessing">
+            <persName><forename>Friedrich Victor Leberecht</forename> <surname>Plessing</surname></persName>
+            <birth when="1749-12-20"/>
+            <death when="1806-02-08"/>
+            <note resp="#claude">Goethe besuchte den jungen Plessing 1777 inkognito in Wernigerode
+            (vgl. „Harzreise im Winter“ und „Campagne in Frankreich 1792“).</note>
+            <idno type="GND">https://d-nb.info/gnd/118741063</idno>
+            <idno type="Wikidata">https://www.wikidata.org/entity/Q55193296</idno>
+         </person>
+         <person xml:id="pers_nietzsche">
+            <persName><forename>Friedrich Wilhelm</forename> <surname>Nietzsche</surname></persName>
+            <birth when="1844-10-15"/>
+            <death when="1900-08-25"/>
+            <note resp="#claude">Deutscher Philosoph der Lebensphilosophie; Hauptbezugspunkt von Musils Geschichts- und Kulturkritik.</note>
+            <idno type="GND">https://d-nb.info/gnd/118587943</idno>
+            <idno type="Wikidata">https://www.wikidata.org/entity/Q9358</idno>
+            <idno type="VIAF">https://viaf.org/viaf/89798474</idno>
+         </person>
+         <person xml:id="pers_rousseau">
+            <persName><forename>Jean-Jacques</forename> <surname>Rousseau</surname></persName>
+            <birth when="1712-06-28"/>
+            <death when="1778-07-02"/>
+            <note resp="#claude">Schweizerisch-französischer Aufklärungsphilosoph; Begründer einer neuen Erziehungs- und Gesellschaftstheorie („Émile", „Contrat social").</note>
+            <idno type="GND">https://d-nb.info/gnd/118603426</idno>
+            <idno type="Wikidata">https://www.wikidata.org/entity/Q6527</idno>
+            <idno type="VIAF">https://viaf.org/viaf/100184045</idno>
+         </person>
+         <person xml:id="pers_flaubert">
+            <persName><forename>Gustave</forename> <surname>Flaubert</surname></persName>
+            <birth when="1821-12-12"/>
+            <death when="1880-05-08"/>
+            <note resp="#claude">Französischer Romancier; Begründer des modernen Realismus („Madame Bovary", 1856).</note>
+            <idno type="GND">https://d-nb.info/gnd/118533754</idno>
+            <idno type="Wikidata">https://www.wikidata.org/entity/Q43444</idno>
+            <idno type="VIAF">https://viaf.org/viaf/9846192</idno>
+         </person>
+         <person xml:id="pers_dostojewski">
+            <persName><forename>Fjodor Michailowitsch</forename> <surname>Dostojewski</surname></persName>
+            <birth when="1821-11-11"/>
+            <death when="1881-02-09"/>
+            <note resp="#claude">Russischer Romancier („Schuld und Sühne", „Die Brüder Karamasow"); im Essay als Diagnostiker menschlicher Abgründe zitiert.</note>
+            <idno type="GND">https://d-nb.info/gnd/118527053</idno>
+            <idno type="Wikidata">https://www.wikidata.org/entity/Q991</idno>
+            <idno type="VIAF">https://viaf.org/viaf/104023256</idno>
+         </person>
+         <person xml:id="pers_hamsun">
+            <persName><forename>Knut</forename> <surname>Hamsun</surname></persName>
+            <birth when="1859-08-04"/>
+            <death when="1952-02-19"/>
+            <note resp="#claude">Norwegischer Schriftsteller; Literaturnobelpreis 1920, kurz vor Erscheinen des Essays.</note>
+            <idno type="GND">https://d-nb.info/gnd/118545515</idno>
+            <idno type="Wikidata">https://www.wikidata.org/entity/Q40826</idno>
+            <idno type="VIAF">https://viaf.org/viaf/59083692</idno>
+         </person>
+         <person xml:id="pers_luther">
+            <persName><forename>Martin</forename> <surname>Luther</surname></persName>
+            <birth when="1483-11-10"/>
+            <death when="1546-02-18"/>
+            <note resp="#claude">Reformator; durch die 95 Thesen (1517) Auslöser der Reformation.</note>
+            <idno type="GND">https://d-nb.info/gnd/118575449</idno>
+            <idno type="Wikidata">https://www.wikidata.org/entity/Q9554</idno>
+            <idno type="VIAF">https://viaf.org/viaf/14773105</idno>
+         </person>
+         <person xml:id="pers_eckhart">
+            <persName>Meister <surname>Eckhart</surname></persName>
+            <birth notBefore="1260" notAfter="1260"/>
+            <death when="1328"/>
+            <note resp="#claude">Bedeutender mittelalterlicher Mystiker und Dominikaner; predigte als einer der ersten in deutscher statt lateinischer Sprache über die unmittelbare Gotteserfahrung. Im Text in der älteren Schreibung „Eckehart".</note>
+            <idno type="GND">https://d-nb.info/gnd/118528823</idno>
+            <idno type="Wikidata">https://www.wikidata.org/entity/Q76548</idno>
+            <idno type="VIAF">https://viaf.org/viaf/88809752</idno>
+         </person>
+         <person xml:id="pers_leibniz">
+            <persName><forename>Gottfried Wilhelm</forename> <surname>Leibniz</surname></persName>
+            <birth when="1646-07-01"/>
+            <death when="1716-11-14"/>
+            <note resp="#claude">Deutscher Universalgelehrter; Mathematiker (Mitbegründer der Infinitesimalrechnung) und Philosoph („Monadologie", Theodizee).</note>
+            <idno type="GND">https://d-nb.info/gnd/118571249</idno>
+            <idno type="Wikidata">https://www.wikidata.org/entity/Q9047</idno>
+            <idno type="VIAF">https://viaf.org/viaf/9849392</idno>
+         </person>
+         <person xml:id="pers_emerson">
+            <persName><forename>Ralph Waldo</forename> <surname>Emerson</surname></persName>
+            <birth when="1803-05-25"/>
+            <death when="1882-04-27"/>
+            <note resp="#claude">US-amerikanischer Essayist und Mitbegründer des Transzendentalismus; einflussreicher Lehrer der Lebensweisheit im 19. Jahrhundert.</note>
+            <idno type="GND">https://d-nb.info/gnd/118530127</idno>
+            <idno type="Wikidata">https://www.wikidata.org/entity/Q48226</idno>
+            <idno type="VIAF">https://viaf.org/viaf/27079964</idno>
+         </person>
+         <person xml:id="pers_konfuzius">
+            <persName>Konfuzius</persName>
+            <birth when="-0551-09-28"/>
+            <death when="-0479"/>
+            <note resp="#claude">Chinesischer Philosoph; seine Lehrgespräche (Lunyu) prägen bis heute die ostasiatische Ethik. Im Text in der bei Musil gebräuchlichen Form „Kungfutse".</note>
+            <idno type="GND">https://d-nb.info/gnd/118565036</idno>
+            <idno type="Wikidata">https://www.wikidata.org/entity/Q4604</idno>
+            <idno type="VIAF">https://viaf.org/viaf/89664672</idno>
+         </person>
+         <person xml:id="pers_franck">
+            <persName><forename>Sebastian</forename> <surname>Franck</surname></persName>
+            <birth when="1499-01-20"/>
+            <death when="1542"/>
+            <note resp="#claude">Spiritualistischer Theologe und Geschichtsschreiber der Reformation; Kritiker konfessioneller Erstarrung.</note>
+            <idno type="GND">https://d-nb.info/gnd/11853467X</idno>
+            <idno type="Wikidata">https://www.wikidata.org/entity/Q63170</idno>
+            <idno type="VIAF">https://viaf.org/viaf/46842654</idno>
+         </person>
+         <person xml:id="pers_schwenckfeld">
+            <persName><forename>Kaspar</forename> <surname>Schwenckfeld von Ossig</surname></persName>
+            <birth when="1489"/>
+            <death when="1561-12-10"/>
+            <note resp="#claude">Schlesischer Reformator des „mittleren Wegs"; Vertreter eines spiritualistischen Christentums neben Luther und Zwingli.</note>
+            <idno type="GND">https://d-nb.info/gnd/118612190</idno>
+            <idno type="Wikidata">https://www.wikidata.org/entity/Q64137</idno>
+         </person>
+         <person xml:id="pers_weigel">
+            <persName><forename>Valentin</forename> <surname>Weigel</surname></persName>
+            <birth when="1533-08-07"/>
+            <death when="1588-06-10"/>
+            <note resp="#claude">Lutherischer Pfarrer und mystischer Theologe; seine spiritualistischen Schriften erschienen erst nach seinem Tod und wurden zur Quelle barocker Frömmigkeit.</note>
+            <idno type="GND">https://d-nb.info/gnd/118630105</idno>
+            <idno type="Wikidata">https://www.wikidata.org/entity/Q77397</idno>
+         </person>
+         <person xml:id="pers_gilbreth">
+            <persName><forename>Frank Bunker</forename> <surname>Gilbreth</surname></persName>
+            <birth when="1868-07-07"/>
+            <death when="1924-06-14"/>
+            <note resp="#claude">US-amerikanischer Pionier der Zeit- und Bewegungsstudien
+            („Scientific Management“).</note>
+            <idno type="GND">https://d-nb.info/gnd/122438841</idno>
+            <idno type="Wikidata">https://www.wikidata.org/entity/Q463793</idno>
+         </person>
+         <person xml:id="pers_jesus">
+            <persName>Jesus Christus</persName>
+            <birth notBefore="-0006" notAfter="-0004"/>
+            <death notBefore="0030" notAfter="0033"/>
+            <note resp="#claude">Zentrale Figur des Christentums; im Essay als Beispiel zweier Existenzformen aus einer Predigt Meister Eckharts zitiert.</note>
+            <idno type="GND">https://d-nb.info/gnd/118557513</idno>
+            <idno type="Wikidata">https://www.wikidata.org/entity/Q302</idno>
+         </person>
+      </listPerson>
+      <listPlace>
+         <place xml:id="pl_europa">
+            <placeName>Europa</placeName>
+            <note resp="#claude">Kontinent; politisch-kulturelles Subjekt des Essays („das hilflose Europa").</note>
+            <idno type="GND">https://d-nb.info/gnd/4015701-5</idno>
+            <idno type="Wikidata">https://www.wikidata.org/entity/Q46</idno>
+            <idno type="GeoNames">https://www.geonames.org/6255148</idno>
+         </place>
+         <place xml:id="pl_deutschland">
+            <placeName>Deutschland</placeName>
+            <note resp="#claude">Staat in Mitteleuropa; zur Zeit des Essays die junge Weimarer Republik nach 1918.</note>
+            <idno type="GND">https://d-nb.info/gnd/4011882-4</idno>
+            <idno type="Wikidata">https://www.wikidata.org/entity/Q183</idno>
+            <idno type="GeoNames">https://www.geonames.org/2921044</idno>
+         </place>
+         <place xml:id="pl_russland">
+            <placeName>Russland</placeName>
+            <note resp="#claude">Zur Zeit des Essays (1922) das post-revolutionäre Sowjetrussland nach der Oktoberrevolution 1917 (die Sowjetunion wurde im Dezember 1922 gegründet). Für viele europäische Intellektuelle Projektionsfläche einer radikalen politisch-sozialen Alternative zur bürgerlichen Zivilisation.</note>
+            <idno type="GND">https://d-nb.info/gnd/4076899-5</idno>
+            <idno type="Wikidata">https://www.wikidata.org/entity/Q159</idno>
+            <idno type="GeoNames">https://www.geonames.org/2017370</idno>
+         </place>
+         <place xml:id="pl_ostasien">
+            <placeName>Ostasien</placeName>
+            <note resp="#claude">Großregion (China, Japan, Korea u. a.); um 1920 für deutschsprachige Intellektuelle Projektionsfläche der Weisheits- und Esoterik-Bewegungen.</note>
+            <idno type="GND">https://d-nb.info/gnd/4044033-4</idno>
+            <idno type="Wikidata">https://www.wikidata.org/entity/Q27231</idno>
+         </place>
+         <place xml:id="pl_indien">
+            <placeName>Indien</placeName>
+            <note resp="#claude">Südasiatischer Subkontinent; 1922 unter britischer Kolonialherrschaft, zugleich Projektionsfläche europäischer Spiritualität (Theosophie, Anthroposophie).</note>
+            <idno type="GND">https://d-nb.info/gnd/4026722-2</idno>
+            <idno type="Wikidata">https://www.wikidata.org/entity/Q668</idno>
+            <idno type="GeoNames">https://www.geonames.org/1269750</idno>
+         </place>
+         <place xml:id="pl_frankreich">
+            <placeName>Frankreich</placeName>
+            <note resp="#claude">Westeuropäischer Staat; mehrfach als kultureller und politischer Bezugsraum erwähnt — u. a. in Curtius' im Text zitierter Schrift zum Syndikalismus der geistigen Arbeiter.</note>
+            <idno type="GND">https://d-nb.info/gnd/4018145-5</idno>
+            <idno type="Wikidata">https://www.wikidata.org/entity/Q142</idno>
+            <idno type="GeoNames">https://www.geonames.org/3017382</idno>
+         </place>
+         <place xml:id="pl_england">
+            <placeName>England</placeName>
+            <note resp="#claude">Konstituierender Landesteil des Vereinigten Königreichs; bei Musil zugleich Synonym für Industrialisierung und Empirismus („englische Webstühle").</note>
+            <idno type="GND">https://d-nb.info/gnd/4014770-8</idno>
+            <idno type="Wikidata">https://www.wikidata.org/entity/Q21</idno>
+            <idno type="GeoNames">https://www.geonames.org/6269131</idno>
+         </place>
+         <place xml:id="pl_italien">
+            <placeName>Italien</placeName>
+            <note resp="#claude">Südeuropäischer Staat; Zentrum der Renaissance und des frühen Monumentalfilms.</note>
+            <idno type="GND">https://d-nb.info/gnd/4027833-5</idno>
+            <idno type="Wikidata">https://www.wikidata.org/entity/Q38</idno>
+            <idno type="GeoNames">https://www.geonames.org/3175395</idno>
+         </place>
+         <place xml:id="pl_niederoesterreich">
+            <placeName>Niederösterreich</placeName>
+            <note resp="#claude">Bundesland Österreichs; Musils Heimatregion.</note>
+            <idno type="GND">https://d-nb.info/gnd/4042103-8</idno>
+            <idno type="Wikidata">https://www.wikidata.org/entity/Q41967</idno>
+            <idno type="GeoNames">https://www.geonames.org/2769848</idno>
+         </place>
+         <place xml:id="pl_rom">
+            <placeName>Rom</placeName>
+            <note resp="#claude">Im Text als untergehende Stadt zitiert
+            („Rom vor dem Untergang“) – Anspielung auf den Filmtopos und auf
+            den geschichtsphilosophischen Verfallsdiskurs.</note>
+            <idno type="GND">https://d-nb.info/gnd/4050359-2</idno>
+            <idno type="Wikidata">https://www.wikidata.org/entity/Q220</idno>
+            <idno type="GeoNames">https://www.geonames.org/3169070</idno>
+         </place>
+      </listPlace>
+      <listBibl>
+         <bibl xml:id="bibl_geburttragoedie">
+            <author ref="#pers_nietzsche">Friedrich Nietzsche</author>:
+            <title level="m">Die Geburt der Tragödie aus dem Geiste der Musik</title>.
+            Leipzig: <date when="1872">1872</date>.
+            <note resp="#claude">Nietzsches Erstlingsschrift; deutet die griechische Tragödie als Synthese zweier Kunsttriebe – des „apollinischen" (Form, Maß, Traum) und des „dionysischen" (Rausch, Auflösung, Musik).</note>
+            <idno type="GND">https://d-nb.info/gnd/4123591-5</idno>
+         </bibl>
+         <bibl xml:id="bibl_unzeitgemaess">
+            <author ref="#pers_nietzsche">Friedrich Nietzsche</author>:
+            <title level="m">Unzeitgemässe Betrachtungen</title>.
+            <date from="1873" to="1876">1873–1876</date>.
+            <note resp="#claude">Vier kulturkritische Essays gegen den Bildungsphilister und das Geschichtsverständnis des wilhelminischen Zeitalters.</note>
+         </bibl>
+         <bibl xml:id="bibl_nutzen">
+            <author ref="#pers_nietzsche">Friedrich Nietzsche</author>:
+            <title level="a">Vom Nutzen und Nachteil der Historie für das Leben</title>.
+            (<title level="m">Unzeitgemässe Betrachtungen</title>, Zweites Stück).
+            <date when="1874">1874</date>.
+            <note resp="#claude">Diagnostiziert eine „historische Krankheit" der Moderne: das Übermaß an Geschichtswissen lähme die schöpferische Lebenskraft. Eine der wichtigsten geschichtskritischen Quellen Musils.</note>
+         </bibl>
+         <bibl xml:id="bibl_emile">
+            <author ref="#pers_rousseau">Jean-Jacques Rousseau</author>:
+            <title level="m">Émile ou De l’éducation</title>.
+            <date when="1762">1762</date>.
+            <note resp="#claude">Erziehungsroman in fünf Büchern; begründet das Konzept der „natürlichen Erziehung", die das Kind nach seiner eigenen Veranlagung wachsen lässt. Grundbuch der modernen Pädagogik.</note>
+         </bibl>
+         <bibl xml:id="bibl_gilbreth_primer">
+            <author ref="#pers_gilbreth">Frank Bunker Gilbreth</author>:
+            <title level="m">Primer of Scientific Management</title>.
+            New York: Van Nostrand, <date when="1912">1912</date>.
+            Dt. Übersetzung: <title level="m">Das ABC der wissenschaftlichen Betriebsführung</title>,
+            Berlin <date when="1917">1917</date>.
+            <note resp="#claude">Einführende Programmschrift des „Scientific Management": industrielle Arbeit soll durch Bewegungsstudien und Zerlegung in messbare Einzelschritte rationalisiert werden.</note>
+            <ref type="url" target="http://digi.econbiz.de/viewer/image/88770073X/2/LOG_0000/">digital</ref>
+         </bibl>
+         <bibl xml:id="bibl_koehler_gestalten">
+            <author ref="#pers_koehler">Wolfgang Köhler</author>:
+            <title level="m">Die physikalischen Gestalten in Ruhe und im stationären Zustand.
+            Eine naturphilosophische Untersuchung</title>.
+            Braunschweig: Vieweg, <date when="1920">1920</date>.
+            <note resp="#claude">Grundlagenwerk der Gestaltpsychologie; zeigt, dass strukturhafte „Gestalten" nicht nur in der Wahrnehmung, sondern auch in der unbelebten Physik auftreten. Für Musil ein Beispiel naturwissenschaftlich fundierter Metaphysik.</note>
+         </bibl>
+         <bibl xml:id="bibl_kritik">
+            <author ref="#pers_kant">Immanuel Kant</author>:
+            <title level="m">Critik der reinen Vernunft</title>.
+            Riga: <date when="1781">1781</date>.
+            <note resp="#claude">Hauptwerk der kritischen Philosophie; untersucht, was der menschliche Verstand prinzipiell erkennen kann. Kant zeigt, dass Raum, Zeit und Kategorien (Ursache, Substanz …) Bedingungen jeder Erfahrung sind und die Metaphysik damit klare Grenzen hat.</note>
+         </bibl>
+         <bibl xml:id="bibl_curtius_syndikalismus">
+            <author ref="#pers_curtius">Ernst Robert Curtius</author>:
+            <title level="m">Der Syndikalismus der geistigen Arbeiter in Frankreich</title>.
+            Bonn: Cohen, <date when="1921">1921</date>.
+            <note resp="#claude">Aktuelle Studie über die organisierte Selbstvertretung französischer Intellektueller nach dem Ersten Weltkrieg; Curtius warnt darin vor der spezifisch deutschen Diagnose einer „europäischen Kulturkrise". Musil setzt sich im Text mit dieser Warnung auseinander.</note>
+         </bibl>
+      </listBibl>
+  </standOff>
   <text>
       <body>
       <div>
@@ -39,9 +506,9 @@
          <div>
             <head>1</head>
             <p>Ich beginne mit einem Symptom.</p>
-            <p>Zweifellos machen wir seit zehn Jahren Weltgeschichte im grellsten Stil und können es doch eigentlich nicht wahrnehmen. Wir sind nicht eigentlich geändert worden; ein bißchen Überhebung vordem, ein bißchen Katzenjammer nachdem; wir waren früher betriebsame Bürger, sind dann Mörder, Totschläger, Diebe, Brandstifter und ähnliches geworden: und haben doch eigentlich nichts erlebt. Oder ist es nicht so? Das Leben geht doch genau so dahin wie früher, bloß etwas geschwächter und mit etwas Krankenvorsicht; der Krieg wirkte mehr karnevalisch als dionysisch<note resp="ak">Vgl. Nietzsche, Geburt der Tragödie (1872)</note>, und die Revolution hat sich parlamentarisiert. Wir waren also vielerlei und haben uns dabei nicht geändert, wir haben viel gesehen und nichts wahrgenommen.</p>
+            <p>Zweifellos machen wir seit zehn Jahren Weltgeschichte im grellsten Stil und können es doch eigentlich nicht wahrnehmen. Wir sind nicht eigentlich geändert worden; ein bißchen Überhebung vordem, ein bißchen Katzenjammer nachdem; wir waren früher betriebsame Bürger, sind dann Mörder, Totschläger, Diebe, Brandstifter und ähnliches geworden: und haben doch eigentlich nichts erlebt. Oder ist es nicht so? Das Leben geht doch genau so dahin wie früher, bloß etwas geschwächter und mit etwas Krankenvorsicht; der Krieg wirkte mehr karnevalisch als dionysisch<note resp="#claude">Anspielung auf <persName ref="#pers_nietzsche">Nietzsches</persName> Unterscheidung in <bibl ref="#bibl_geburttragoedie">Die Geburt der Tragödie</bibl> (1872) zwischen dem dionysischen (rauschhaft-ekstatischen) und dem apollinischen (besonnen-formenden) Prinzip. Musil meint: der Krieg war eher Maskerade und Spektakel als echter Lebensrausch.</note>, und die Revolution hat sich parlamentarisiert. Wir waren also vielerlei und haben uns dabei nicht geändert, wir haben viel gesehen und nichts wahrgenommen.</p>
             <p>Darauf gibt es, glaube ich, nur eine Antwort: Wir besaßen nicht die Begriffe, um das Erlebte in uns hineinzuziehn. Oder auch nicht die Gefühle, <pb facs="https://digi.ub.uni-heidelberg.de/diglit/ganymed1922/0383/ image" />deren Magnetismus sie dazu aktiviert. Zurückgeblieben ist nur eine sehr erstaunte Unruhe, ein Zustand, als hätten sich vom Erlebnis her Nervenbahnen zu bilden begonnen und wären vorzeitig abgerissen worden.</p>
-            <p>Eine Unruhe. Deutschland wimmelt von Sekten. Man blickt nach Rußland, nach Ostasien, nach Indien. Man klagt die Wirtschaft an, die Zivilisation, den Rationalismus, den Nationalismus, man sieht einen Untergang, ein Nachlassen der Rasse. Alle Wölbungen sind vom Krieg eingedrückt worden. Selbst der Expressionsismus stirbt. Und das Kino ist am Vormarsch (Rom vor dem Untergang). In Frankreich, in England, in Italien — soweit man es als Nichtspezialist bei unsrem sehr schlechten Nachrichtendienst beurteilen kann — scheint die Unsicherheit nicht geringer zu sein, mögen auch die Einzelerscheinungen abweichen.</p>
+            <p>Eine Unruhe. <placeName ref="#pl_deutschland">Deutschland</placeName> wimmelt von Sekten. Man blickt nach <placeName ref="#pl_russland">Rußland</placeName>, nach <placeName ref="#pl_ostasien">Ostasien</placeName>, nach <placeName ref="#pl_indien">Indien</placeName>. Man klagt die Wirtschaft an, die Zivilisation, den Rationalismus, den Nationalismus, man sieht einen Untergang, ein Nachlassen der Rasse. Alle Wölbungen sind vom Krieg eingedrückt worden. Selbst der Expressionsismus stirbt. Und das Kino ist am Vormarsch (<placeName ref="#pl_rom">Rom</placeName> vor dem Untergang)<note resp="#claude">Anspielung auf den damals populären Monumentalfilm-Topos vom Niedergang Roms (vgl. „Quo vadis?“, 1913) und auf den geschichtsphilosophischen Verfallsdiskurs der Nachkriegszeit.</note>. In <placeName ref="#pl_frankreich">Frankreich</placeName>, in <placeName ref="#pl_england">England</placeName>, in <placeName ref="#pl_italien">Italien</placeName> — soweit man es als Nichtspezialist bei unsrem sehr schlechten Nachrichtendienst beurteilen kann — scheint die Unsicherheit nicht geringer zu sein, mögen auch die Einzelerscheinungen abweichen.</p>
        </div>  
          <div>
             <head>2</head>
@@ -49,13 +516,13 @@
             <p>Freilich wird man einwenden, man sei zu nah. Das ist aber ein Gleichnis. Hergenommen vom Gesichtssinn; man kann zu nah an einem Ding sein, um es überblicken zu können. Kann man aber zu nah an einer Erkenntnis sein, um sie fassen zu können? Das Gleichnis stimmt nicht. Wir wüßten genug, um uns ein Urteil über Gegenwärtiges und Jüngstvergangenes zu bilden, wir wissen jedenfalls mehr, als spätere Zeiten wissen werden. Eine andre Wurzel des Gleichnisses heißt, noch zu beteiligt sein. Aber wir waren ja gar nicht beteiligt?</p>
             <p>Die berühmte historische Distanz besteht darin, daß von hundert Tatsachen fünfundneunzig verlorengegangen sind, weshalb sich die verbliebenen ordnen lassen, wie man will. Darin aber, daß man diese fünf nun ansieht wie eine Mode von vor zwanzig Jahren oder ein lebhaftes Gespräch zwischen Menschen, die man nicht hört, bekundet sich die Objektivität. Man erschrickt über die Groteskheit menschlicher Handlungen, sobald sie nur ein wenig ausgetrocknet sind, und sucht sie aus allen Umständen zu erklären, die man nicht selbst ist, das ist aus den historischen.</p>
             <pb facs="https://digi.ub.uni-heidelberg.de/diglit/ganymed1922/0384/image" />
-            <p>Historisch ist das, was man selbst nicht tun würde; der Gegensatz dazu ist das Lebendige. Wenn unsre Zeit eine „Epoche“ wäre, so dürfte man wohl fragen, ob wir uns am Anfang, am Ende oder in der Mitte befinden? Wenn es einen gotischen Menschen mit einer Vor-, Früh-, Hoch- und Späzeit gegeben hat: in welcher Lage zu seinem Zenith befindet sich der moderne? Wenn es eine deutsche oder eine weiße Rasse gibt: in welcher biologischen Phase? Soll solcher Auf- und Niedergang nicht nur eine nachträgliche und recht billige Feststellung sein, so müßte man ein symptomatologisches Bild davon haben, wie solche Auf- und Niedergänge im allgemeinen aussehn. Das wäre eine andre Objektivität, aber daran fehlt es noch weit. Und vielleicht sind die lebendigen historischen Tatsachen gar nicht eindeutig, sondern erst die toten? Am Ende ist die lebendige Geschichte gar keine Geschichte, nämlich nichts, das sich mit den historischen Vulgärkategorien einfangen ließe? </p>
+            <p>Historisch ist das, was man selbst nicht tun würde; der Gegensatz dazu ist das Lebendige. Wenn unsre Zeit eine „Epoche“ wäre, so dürfte man wohl fragen, ob wir uns am Anfang, am Ende oder in der Mitte befinden? Wenn es einen gotischen Menschen mit einer Vor-, Früh-, Hoch- und Späzeit gegeben hat: in welcher Lage zu seinem Zenith befindet sich der moderne? Wenn es eine deutsche oder eine weiße Rasse gibt: in welcher biologischen Phase?<note resp="#claude">„Rasse" ist um 1920 ein verbreiteter, vermeintlich wissenschaftlicher Sammelbegriff für biologisch-kulturelle Großgruppen. Musil setzt den Begriff hier kritisch in Frage – sein ganzer Essay argumentiert gegen solche essentialistischen Kategorien. Aus heutiger Sicht ist die Rede von „Rassen" als realen biologischen Einheiten widerlegt und rassistisch konnotiert.</note> Soll solcher Auf- und Niedergang nicht nur eine nachträgliche und recht billige Feststellung sein, so müßte man ein symptomatologisches Bild davon haben, wie solche Auf- und Niedergänge im allgemeinen aussehn. Das wäre eine andre Objektivität, aber daran fehlt es noch weit. Und vielleicht sind die lebendigen historischen Tatsachen gar nicht eindeutig, sondern erst die toten? Am Ende ist die lebendige Geschichte gar keine Geschichte, nämlich nichts, das sich mit den historischen Vulgärkategorien einfangen ließe? </p>
             <p>Es ist da nämlich ein merkwürdiges Gefühl von Zufall mitbeteiligt. </p>
          </div>
          <div>
             <head>3</head>
             <p>Es ist ein sehr aktuelles Gefühl von Zufall mit bei allem, was geschah. Es hieße den Glauben an die Notwendigkeit der Geschichte doch beträchtlich überspannen, wollte man in allen Entscheidungen, die wir erlebt haben, den Ausdruck einer einheitlichen Bedeutung sehn. Leicht vermag man hinterdrein im Versagen der deutschen Diplomatie oder Feldherrnkunst zum Beispiel eine Notwendigkeit zu erkennen: aber jeder weiß doch, daß es ebensogut auch anders hätte kommen können, und daß die Entscheidung oft an einem Haar hing. Es sieht beinahe aus, als ob das Geschehen gar nicht notwendig wäre, sondern die Notwendigkeit erst nachträglich duldete.</p>
-            <p>Ich will nicht Philosophie treiben — Gott behüte mich, in einer so seriösen Zeit — aber ich muß an den berühmten Mann denken, der unter dem berüchtigten Dach vorübergeht, von dem der Ziegel fällt. War das notwendig? — Gewiß ja und gewiß nein. Daß der berühmte Ziegel sich lockerte, und daß der berüchtigte Mann vorbei kam, trug sich — wollen wir sagen, unter Nachlaß der Lehre vom freien und unfreien Willen, bei der sich <pb facs="https://digi.ub.uni-heidelberg.de/diglit/ganymed1922/0385/image" />die ganze Geschichte noch einmal wiederholt, — ganz gewiß mit Gesetz und Notwendigkeit zu; daß aber beides just zur selben Zeit geschah, tat es nicht, wenn man nicht an den lieben Gott glaubt oder an das Walten einer noch höheren Vernunft in der Geschichte. Weshalb man die Unglücksfälle zwar aus Gott oder einer Ordnung ableiten kann, aber nicht Gott oder die Ordnung aus den Unglücksfällen.</p>
+            <p>Ich will nicht Philosophie treiben — Gott behüte mich, in einer so seriösen Zeit — aber ich muß an den berühmten Mann denken, der unter dem berüchtigten Dach vorübergeht, von dem der Ziegel fällt.<note resp="#claude">Klassisches Schulbeispiel der Philosophie zum Verhältnis von Zufall und Notwendigkeit: das Lockern des Ziegels und der Weg des Mannes folgen je für sich kausalen Gesetzen, ihr Zusammentreffen aber nicht. Musils Argument gegen ein zwangsläufiges Geschichts-Schicksal.</note> War das notwendig? — Gewiß ja und gewiß nein. Daß der berühmte Ziegel sich lockerte, und daß der berüchtigte Mann vorbei kam, trug sich — wollen wir sagen, unter Nachlaß der Lehre vom freien und unfreien Willen, bei der sich <pb facs="https://digi.ub.uni-heidelberg.de/diglit/ganymed1922/0385/image" />die ganze Geschichte noch einmal wiederholt, — ganz gewiß mit Gesetz und Notwendigkeit zu; daß aber beides just zur selben Zeit geschah, tat es nicht, wenn man nicht an den lieben Gott glaubt oder an das Walten einer noch höheren Vernunft in der Geschichte. Weshalb man die Unglücksfälle zwar aus Gott oder einer Ordnung ableiten kann, aber nicht Gott oder die Ordnung aus den Unglücksfällen.</p>
             <p>Schlicht gesagt: Was man geschichtliche Notwendigkeit nennt, ist bekanntlich keine gesetzliche Notwendigkeit, wo zu einem bestimmten p ein bestimmtes v gehört, sondern ist so notwendig, wie es die Dinge sind, „wo eins das andere gibt“. Gesetze mögen schon dabei sein — etwa der Zusammenhang geistiger Entwicklungen mit wirtschaftlichen oder der Stellungsfaktor in der bildenden Kunst —, aber doch ist immer auch etwas dabei, das so nur einmal und diesmal da ist. Und nebenbei bemerkt, zu diesen einmaligen Tatsachen gehören zum Teil auch wir Menschen.</p>
          </div>
          <div>
@@ -72,17 +539,17 @@
             <head>6</head> 
             <p>Eine historische Betrachtungsweise, welche das Geschehen in aufeinanderfolgende Epochen zerlegt und dann so tut, als entspräche jeder ein bestimmter historischer Typus Mensch — also etwa der griechische oder der gotische oder der moderne —, und ferner so tut, als gäbe es da einen Auf- und Abstieg (etwa also der frühgriechische — der griechische — der hochgriechische — der spät- und verfallsgriechische — der nichtgriechische Mensch), und es wäre da etwas aufgeblüht und verwelkt, nicht bloß eine Entfaltung, sondern ein Wesen, das sich entfaltete, eine Menschenart, eine Rasse, eine Gesellschaft, ein real wirkender Geist, ein Mysterium: eine solche Betrachtungsweise, die heute nicht nur in der Essayistik üblich ist, sondern vielfach auch in der historischen Forschung selbst, arbeitet mit einer Hypothese.</p>
             <p>Gegeben ist von der ganzen Sache nur das Phänomenale; eine bestimmte Art von Bauten, Dichtungen, Bildwerken, Handlungen, Ereignissen, Lebensformen und ihr deutliches Beisammensein und Zueinandergehören. Daß dieses phänomenale Substrat einer bestimmten Zeitspanne, Epoche, Kultur auf den ersten Blick als eine einmalige Einheit erscheinen mag, die nur <pb facs="https://digi.ub.uni-heidelberg.de/diglit/ganymed1922/0387/image" />dann und dort auftrat, hindert nicht zu bemerken, daß dies nicht ganz richtig ist; orientalische Lebenselemente wirken bekanntlich ins Hellenische hinein, und hellenische durchsetzen das Leben bis auf den heutigen Tag. Im Gegenteil, ähnliche Lebensäußerungen (und in der Geschichte handelt es sich ja doch nur um Ähnlichkeiten und Analogien) bilden durchaus, über Zeit und Ort verteilt, ein Kontinuum, das sich nur an bestimmten Stellen auffallend verdichtet; man könnte fast sagen, an bestimmten Umständen niederschlägt.</p> 
-            <p>Ein solches phänomenales Bild erinnert den, der mit der statistischen Seite der äußeren oder inneren Natur ein wenig zu tun gehabt hat, an die Verschränkung einer dauernden, sagen wir ganz allgemein Determinante mit wechselnden, und ist die menschliche Konstitution diese dauernde Determinante, so kann sie nicht zugleich die Ursache der verschiedenen Epochen, Gesellschaften und dergleichen sein — im Sinne von tatsächlich wirkenden Wesenheiten genommen, und nicht bloß als harmlos deskriptive Sammelausdrücke —, sondern die Ursachen müssen in den Umständen liegen. Die Botanik unterscheidet z. B. in einem so kleinen Land wie Niederösterreich ungefähr dreitausend Formen der wilden Bose und weiß nicht, ob sie diese in dreihundert oder in dreißig Arten zusammenfassen soll; so unsicher ist die Vorstellung von dem, was eine Art ist, selbst dort, wo so viele eindeutige Merkmale zur Verfügung stehn. Die Geschichte hingegen sollte es sich mit so durchaus nicht eindeutigen und so gewiß nicht „wesentlichen“ Merkmalen zu tun vermessen, wie es die komplizierten Erscheinungen von Bauten, Werken und Lebensformen sind? Es handelt sich bei solchen Bedenken nicht darum, die phänomenale Existenz verschiedener Epochen zu leugnen, und in gewissem Sinn liegt auch jeder ein andrer Mensch zugrunde: aber es handelt sich um diesen Sinn!</p> 
+            <p>Ein solches phänomenales Bild erinnert den, der mit der statistischen Seite der äußeren oder inneren Natur ein wenig zu tun gehabt hat, an die Verschränkung einer dauernden, sagen wir ganz allgemein Determinante mit wechselnden, und ist die menschliche Konstitution diese dauernde Determinante, so kann sie nicht zugleich die Ursache der verschiedenen Epochen, Gesellschaften und dergleichen sein — im Sinne von tatsächlich wirkenden Wesenheiten genommen, und nicht bloß als harmlos deskriptive Sammelausdrücke —, sondern die Ursachen müssen in den Umständen liegen. Die Botanik unterscheidet z. B. in einem so kleinen Land wie <placeName ref="#pl_niederoesterreich">Niederösterreich</placeName> ungefähr dreitausend Formen der wilden Bose und weiß nicht, ob sie diese in dreihundert oder in dreißig Arten zusammenfassen soll; so unsicher ist die Vorstellung von dem, was eine Art ist, selbst dort, wo so viele eindeutige Merkmale zur Verfügung stehn. Die Geschichte hingegen sollte es sich mit so durchaus nicht eindeutigen und so gewiß nicht „wesentlichen“ Merkmalen zu tun vermessen, wie es die komplizierten Erscheinungen von Bauten, Werken und Lebensformen sind? Es handelt sich bei solchen Bedenken nicht darum, die phänomenale Existenz verschiedener Epochen zu leugnen, und in gewissem Sinn liegt auch jeder ein andrer Mensch zugrunde: aber es handelt sich um diesen Sinn!</p> 
          </div>
          <div>
             <head>7</head>
             <p>Der Mensch hat sich seit 1914 als eine überraschend viel bildsamere Masse erwiesen, als man gemeinhin annahm.</p>
-            <p>Aus religiösen, moralischen und politischen Gründen hatte man vordem eine solche Erkenntnis nie recht wahrhaben wollen. Ich erinnere mich <pb facs="https://digi.ub.uni-heidelberg.de/diglit/ganymed1922/0388/image" />noch recht gut des sympathischen Aufsatzes eines repräsentativen deutschen Dichters, in dem dieser darüber staunte, daß der Mensch doch nicht so sei, wie er ihn, sondern so bös wie Dostojewskij ihn gesehen habe. Andre mögen sich vielleicht der Bedeutung erinnern, welche in unsren Moralsystemen dem „Charakter“ zukommt, das ist der Forderung, daß der Mensch mit sich als mit einer Konstanten rechnen lasse, während eine kompliziertere moralische Mathematik nicht nur möglich, sondern wahrscheinlich nötig ist: Von einem Denken, das an die Fiktion des konstanten seelischen Habitus gewöhnt ist, ist der Schritt zur Annahme des Typus, der Epoche und dergleichen nicht weit.</p> 
+            <p>Aus religiösen, moralischen und politischen Gründen hatte man vordem eine solche Erkenntnis nie recht wahrhaben wollen. Ich erinnere mich <pb facs="https://digi.ub.uni-heidelberg.de/diglit/ganymed1922/0388/image" />noch recht gut des sympathischen Aufsatzes eines repräsentativen deutschen Dichters, in dem dieser darüber staunte, daß der Mensch doch nicht so sei, wie er ihn, sondern so bös wie <persName ref="#pers_dostojewski">Dostojewskij</persName> ihn gesehen habe. Andre mögen sich vielleicht der Bedeutung erinnern, welche in unsren Moralsystemen dem „Charakter“ zukommt, das ist der Forderung, daß der Mensch mit sich als mit einer Konstanten rechnen lasse, während eine kompliziertere moralische Mathematik nicht nur möglich, sondern wahrscheinlich nötig ist: Von einem Denken, das an die Fiktion des konstanten seelischen Habitus gewöhnt ist, ist der Schritt zur Annahme des Typus, der Epoche und dergleichen nicht weit.</p> 
             <p>Diese starre Einteilung widerspricht jedoch den Erfahrungen der Psychologie und unsres Lebens. Die Psychologie zeigt, daß die Phänomene vom übernormalen bis zum unternormalen Menschen stetig und ohne Sprung sich aneinanderbreiten, und die Erfahrung des Kriegs hat es in einem ungeheuren Massenexperiment allen bestätigt, daß der Mensch sich leicht zu den äußersten Extremen und wieder zurück bewegen kann, ohne sich im Wesen zu ändern. Er ändert sich, aber er ändert nicht sich.</p>
          </div>
          <div>
             <head>8</head> 
-            <p>Die Formel für diese Erfahrungen müßte ungefähr lauten: Große Amplitude der Äußerung, kleine im Innern. Es gehört gar nicht so viel dazu, um aus dem gotischen Menschen oder dem antiken Griechen den modernen Zivilisationsmenschen zu machen. Ein kleines, dauernd in einer bestimmten Richtung wirkendes Übergewicht von Umständen, von Außerseelischem, von Zufälligkeiten, Hinzugefallenem genügt dafür. Dieses Wesen ist ebensoleicht fähig der Menschenfresserei wie der Kritik der reinen Vernunft. Man soll nicht immer denken, daß es das tut, was es ist, sondern es wird das, was es — aus Gott weiß welchen Gründen — tut. Die Leute machen sich ihre Kleider, aber auch die Kleider machen Leute, und die Physiognomie ist eine unter dem Druck von innen und außen bewegliche Membran. Es soll damit natürlich nicht der Unterschied zwischen primitiven Kulturen und entwickelten Gesellschaften geleugnet sein; er liegt in einer größeren Versalität des Gehirns, die sich nur durch Generationen entwickelt – aber <pb facs="https://digi.ub.uni-heidelberg.de/diglit/ganymed1922/0389/image" />genau so wie das Kinn zurücktritt und der Gang aufrecht wird, nämlich als ein wirklicher physiologischer Unterschied, funktionell bedingt —, während es gar keinen funktionellen Unterschied ausmacht, ob man sein Gehirn aristotelisch oder kantisch turnen läßt. Wenn man Aufstieg, Höhe, Verfall einer bestimmten Menschenart oder Gesellschaft ohne solche Einschränkungen annimmt, so verlegt man das Entscheidende und Treibende zu sehr ins Zentrum; man muß es mehr, als es gewöhnlich geschieht, an der Peripherie suchen, bei den Umständen, beim „Ans-Ruder-Kommen“ bestimmter Menschen- oder Anlagengruppen innerhalb eines im ganzen ziemlich gleichen Gemischs, beim Zufall oder richtiger gesagt, bei der „ungesetzlichen Notwendigkeit“, wo eins das andere gibt, nicht zufällig, aber doch in der durchreichenden Aneinanderkettung von keinem Gesetz beherrscht. (Um ein Beispiel zu geben: Wir wären ja wohl imstande, mit unsrer technischen und kommerziellen Organisation einen gotischen Dom in ein paar Jahren, und wenn es auf den Rekord ankäme, mit neuen Arten von Gilbrethgerüsten und „wissenschaftlicher Betriebsführung“<note resp="ak">Gilbreth, Frank Bunker: Primer of scientific management, New York 1912 (dt. Übersetzung; Das ABC der wissenschaftlichen Betriebsführung, Berlin 1917); digital: <ref type="url">http://digi.econbiz.de/viewer/image/88770073X/2/LOG_0000/</ref>.</note> in Wochen zu bauen. Er würde einheitlich nach einem Plan aufschießen, und wenn wir dazu selbst einen Originalplan verwendeten, würde es eine kahle Arbeit bleiben, weil die Zeit dabei fehlt, der Wechsel der Generationen, die Inkonsequenz, das organisch Gewordene, welches eben das unorganisch Zustandegekommene ist, und dergleichen. Die befremdlich lange Dauer von Willensimpulsen, die im Ausdruck der gotischen Seele liegt, entsteht so aus der langsamen, festhalten müssenden Technik der Verwirklichung, und Technisches, Kaufmännisches, Geistiges, Politisches verwirrt sich zu einem tausendfachen Gestrüpp von Ursachen schon in diesem einen Beispiel, wenn man es weiter verfolgt.)</p>
+            <p>Die Formel für diese Erfahrungen müßte ungefähr lauten: Große Amplitude der Äußerung, kleine im Innern. Es gehört gar nicht so viel dazu, um aus dem gotischen Menschen oder dem antiken Griechen den modernen Zivilisationsmenschen zu machen. Ein kleines, dauernd in einer bestimmten Richtung wirkendes Übergewicht von Umständen, von Außerseelischem, von Zufälligkeiten, Hinzugefallenem genügt dafür. Dieses Wesen ist ebensoleicht fähig der Menschenfresserei wie der <bibl ref="#bibl_kritik">Kritik der reinen Vernunft</bibl>. Man soll nicht immer denken, daß es das tut, was es ist, sondern es wird das, was es — aus Gott weiß welchen Gründen — tut. Die Leute machen sich ihre Kleider, aber auch die Kleider machen Leute, und die Physiognomie ist eine unter dem Druck von innen und außen bewegliche Membran. Es soll damit natürlich nicht der Unterschied zwischen primitiven Kulturen und entwickelten Gesellschaften geleugnet sein; er liegt in einer größeren Versalität<note resp="#claude">Veraltete Form für „Versatilität" (von lat. <foreign xml:lang="la">versatilis</foreign>, „wendig"): Vielseitigkeit, Anpassungsfähigkeit. Musil meint die größere Plastizität des modernen Gehirns gegenüber primitiven Kulturen.</note> des Gehirns, die sich nur durch Generationen entwickelt – aber <pb facs="https://digi.ub.uni-heidelberg.de/diglit/ganymed1922/0389/image" />genau so wie das Kinn zurücktritt und der Gang aufrecht wird, nämlich als ein wirklicher physiologischer Unterschied, funktionell bedingt —, während es gar keinen funktionellen Unterschied ausmacht, ob man sein Gehirn aristotelisch oder kantisch turnen läßt. Wenn man Aufstieg, Höhe, Verfall einer bestimmten Menschenart oder Gesellschaft ohne solche Einschränkungen annimmt, so verlegt man das Entscheidende und Treibende zu sehr ins Zentrum; man muß es mehr, als es gewöhnlich geschieht, an der Peripherie suchen, bei den Umständen, beim „Ans-Ruder-Kommen“ bestimmter Menschen- oder Anlagengruppen innerhalb eines im ganzen ziemlich gleichen Gemischs, beim Zufall oder richtiger gesagt, bei der „ungesetzlichen Notwendigkeit“, wo eins das andere gibt, nicht zufällig, aber doch in der durchreichenden Aneinanderkettung von keinem Gesetz beherrscht. (Um ein Beispiel zu geben: Wir wären ja wohl imstande, mit unsrer technischen und kommerziellen Organisation einen gotischen Dom in ein paar Jahren, und wenn es auf den Rekord ankäme, mit neuen Arten von Gilbrethgerüsten und „wissenschaftlicher Betriebsführung“<note resp="#claude"><persName ref="#pers_gilbreth">Frank B. Gilbreth</persName> war neben Frederick W. Taylor Pionier des „Scientific Management": die wissenschaftliche Zerlegung industrieller Arbeitsabläufe in messbare Einzelbewegungen, um maximale Effizienz zu erreichen. Musil zitiert dies ironisch als Sinnbild für die Idee, Geistiges (einen gotischen Dom) durch reine Rationalisierung herstellen zu können. Vgl. <bibl ref="#bibl_gilbreth_primer"><title>Primer of scientific management</title>, New York 1912 (dt. <title>Das ABC der wissenschaftlichen Betriebsführung</title>, Berlin 1917)</bibl>; digital: <ref type="url">http://digi.econbiz.de/viewer/image/88770073X/2/LOG_0000/</ref>.</note> in Wochen zu bauen. Er würde einheitlich nach einem Plan aufschießen, und wenn wir dazu selbst einen Originalplan verwendeten, würde es eine kahle Arbeit bleiben, weil die Zeit dabei fehlt, der Wechsel der Generationen, die Inkonsequenz, das organisch Gewordene, welches eben das unorganisch Zustandegekommene ist, und dergleichen. Die befremdlich lange Dauer von Willensimpulsen, die im Ausdruck der gotischen Seele liegt, entsteht so aus der langsamen, festhalten müssenden Technik der Verwirklichung, und Technisches, Kaufmännisches, Geistiges, Politisches verwirrt sich zu einem tausendfachen Gestrüpp von Ursachen schon in diesem einen Beispiel, wenn man es weiter verfolgt.)</p>
          </div>
          <div>
             <head>9</head> 
@@ -92,15 +559,15 @@
          <div>
             <head>10</head> 
             <p>Wodurch?</p>
-            <p>Es ist wohl zum letztenmal in der Zeit der Aufklärung dagewesen; in jenem ausgehenden 18. Jahrhundert glaubten die Menschen an etwas in uns, das nur befreit zu werden brauche, um emporzuschnellen. Sie nannten es die „Vernunft“ und hofften auf eine „natürliche Religion“, eine „natürliche Moral“, eine „natürliche Erziehung“<note>vgl. Rousseau,  Jean-Jacques, Emile oder über die Erziehung (1762)</note>, ja selbst auf eine „natürliche Wirtschaft“; sie schätzten Überlieferung gering und trauten sich zu, die Welt aus dem Geist neu aufzubaun. Der Versuch, auf einer viel zu schmalen Denkensgrundlage unternommen, brach zusammen und hinterließ einen platten Schutthaufen. Die Gegenwart fand das Entsetzen vor ihm (genauer vor einer im 19. Jahrhundert unternommenen, abgeschwächten naturwissenschaftlichen Wiederholung) noch den Büchern von Flaubert aufgeprägt, von Dostojewskij, ja selbst noch von Hamsun; der „Rationalismus“ war bei seinem Ende verächtlich und lächerlich geworden.</p>
-            <p>Es ist begreiflich, daß nach einem Fehlschlag des rational Konstruktiven ein Bedürfnis nach dem Irrationalen, nach Tatsachenfülle, nach Wirklichkeit folgt. Es kam auf zwei Wegen; ein Weg dieser Gegenwelle war: Geschichte. In gewissem Sinn war das plötzlich erwachende Interesse für sie ein Zurücksinken von der Anmaßlichkeit des Manns zum Lauschen des Kindes; Weite, Ruhe, Geführtwerden, die Vernunft aus den Dingen in den Menschen wachsen lassen: an die Stelle ethisch-aktivistischer Schroffheit tritt eine universalere, versöhnlichere, aber unbestimmtere Denkweise. Und, ach, die Tatsachenfülle wuchs zur Überfülle, die Geschichtsforschung wurde, einem Übermaß von Tatsachen gegenüber, notgedrungen immer pragmatischer und exakter: Ergebnis ein Alpdruck, ein stündlich wachsender Berg von Tatsachen, Gewinn an Wissen, Verlust an Leben<note resp="ak">Vgl. Friedrich Nietzsche, Vom Nutzen und Nachteil der Historie für das Leben. Unzeitgemäße Betrachtungen Zweites Stück</note>, ein seelischer Fehlschlag, den zu vermeiden übrigens gar nicht ihr allein anheimgegeben war.</p> 
+            <p>Es ist wohl zum letztenmal in der Zeit der Aufklärung dagewesen; in jenem ausgehenden 18. Jahrhundert glaubten die Menschen an etwas in uns, das nur befreit zu werden brauche, um emporzuschnellen. Sie nannten es die „Vernunft“ und hofften auf eine „natürliche Religion“, eine „natürliche Moral“, eine „natürliche Erziehung“<note resp="#claude"><persName ref="#pers_rousseau">Rousseau</persName> entwickelt in <bibl ref="#bibl_emile">Émile oder über die Erziehung</bibl> (1762) das Konzept der „natürlichen Erziehung": das Kind soll frei nach eigener Veranlagung wachsen, nicht durch gesellschaftliche Konventionen verbogen werden. Programmatische Schrift der Aufklärungspädagogik.</note>, ja selbst auf eine „natürliche Wirtschaft“; sie schätzten Überlieferung gering und trauten sich zu, die Welt aus dem Geist neu aufzubaun. Der Versuch, auf einer viel zu schmalen Denkensgrundlage unternommen, brach zusammen und hinterließ einen platten Schutthaufen. Die Gegenwart fand das Entsetzen vor ihm (genauer vor einer im 19. Jahrhundert unternommenen, abgeschwächten naturwissenschaftlichen Wiederholung) noch den Büchern von <persName ref="#pers_flaubert">Flaubert</persName> aufgeprägt, von <persName ref="#pers_dostojewski">Dostojewskij</persName>, ja selbst noch von <persName ref="#pers_hamsun">Hamsun</persName>; der „Rationalismus“ war bei seinem Ende verächtlich und lächerlich geworden.</p>
+            <p>Es ist begreiflich, daß nach einem Fehlschlag des rational Konstruktiven ein Bedürfnis nach dem Irrationalen, nach Tatsachenfülle, nach Wirklichkeit folgt. Es kam auf zwei Wegen; ein Weg dieser Gegenwelle war: Geschichte. In gewissem Sinn war das plötzlich erwachende Interesse für sie ein Zurücksinken von der Anmaßlichkeit des Manns zum Lauschen des Kindes; Weite, Ruhe, Geführtwerden, die Vernunft aus den Dingen in den Menschen wachsen lassen: an die Stelle ethisch-aktivistischer Schroffheit tritt eine universalere, versöhnlichere, aber unbestimmtere Denkweise. Und, ach, die Tatsachenfülle wuchs zur Überfülle, die Geschichtsforschung wurde, einem Übermaß von Tatsachen gegenüber, notgedrungen immer pragmatischer und exakter: Ergebnis ein Alpdruck, ein stündlich wachsender Berg von Tatsachen, Gewinn an Wissen, Verlust an Leben<note resp="#claude">Direkter Bezug auf <persName ref="#pers_nietzsche">Nietzsches</persName> Schrift <bibl ref="#bibl_nutzen">Vom Nutzen und Nachteil der Historie für das Leben</bibl> (1874, zweites Stück der Unzeitgemässen Betrachtungen). Nietzsche diagnostiziert dort, die übermäßige Geschichtswissenschaft des 19. Jahrhunderts schwäche das schöpferische Leben – genau die Diagnose, die Musil hier wiederaufnimmt.</note>, ein seelischer Fehlschlag, den zu vermeiden übrigens gar nicht ihr allein anheimgegeben war.</p> 
             <pb facs="https://digi.ub.uni-heidelberg.de/diglit/ganymed1922/0391/image" />
-            <p>Denn die Geschichte hatte seit der Generation unsrer Großväter etwa, also in einer Zeit steigender Pragmatisierung des gesamten Denkens, wo sich die Philosophie hütete zu philosophieren, deren Aufgabe der Lebensauslegung im Nebenamt übernehmen müssen und erscheint daher gleich mit zwei schlechten Gewissen behaftet; einem pragmatischen, das über das Unzeitgemäße einer Geschichtsphilosophie<note>Nietzsche, Unzeitgemässe Betrachtungen</note> spottet, und einem philosophischen, das über den seelenlosen Pragmatismus stöhnt, weil es ohne große ordnende Gesichtspunkte eben nicht geht.</p> 
+            <p>Denn die Geschichte hatte seit der Generation unsrer Großväter etwa, also in einer Zeit steigender Pragmatisierung des gesamten Denkens, wo sich die Philosophie hütete zu philosophieren, deren Aufgabe der Lebensauslegung im Nebenamt übernehmen müssen und erscheint daher gleich mit zwei schlechten Gewissen behaftet; einem pragmatischen, das über das Unzeitgemäße einer Geschichtsphilosophie<note resp="#claude">Wortspiel mit dem Titel von <persName ref="#pers_nietzsche">Nietzsches</persName> <bibl ref="#bibl_unzeitgemaess">Unzeitgemässe Betrachtungen</bibl> (1873–1876): der Pragmatismus belächele jeden geschichtsphilosophischen Versuch als „unzeitgemäß", weil er sich an die Tatsachen halten will.</note> spottet, und einem philosophischen, das über den seelenlosen Pragmatismus stöhnt, weil es ohne große ordnende Gesichtspunkte eben nicht geht.</p> 
          </div>
          <div>
             <head>11</head> 
             <p>Es sei hier eine Abschweifung gestattet, weil es noch immer zum Prestige der Schriftsteller gehört, auf den öden Pragmatismus böse zu sein.</p>
-            <p>Bekannt ist, daß schon „unsre großen klassischen Geistesheroen“, so der Ausdruck verstattet ist, die Ohren zurücklegten, wenn diese Geistesrichtung sich hören machte. <persName>Goethe</persName>, der <persName>Kant</persName> bewunderte, <persName>Spinoza</persName> liebte und ein Naturforscher war, stand sich besser mit dem Verstand als die Goetheseelein von heute (mit seiner Intuition wird Mißbrauch getrieben; in den naturwissenschaftlichen Schriften findet sich durchaus nicht jene „andre Art des Erkennens“, für die er so oft als Eideshelfer angerufen wird); wohl aber hatte die Klassik keine Freundlichkeit für englische Webstühle, für Mathematik, für Mechanik und, wenn ich mich recht erinnere, auch nicht für <persName>Locke</persName> und <persName>Hume</persName>, deren — nun, man sagt Skepsis, sie ablehnte, aber es war wohl eigentlich nur eine Form jenes Geistes der Positivität, der mit den Naturwissenschaften, der Mathematik und der Industrie heraufkam und von der Klassik instinktiv als sie zersetzend empfunden wurde. (Noch <persName>Hebbel</persName>, der sonst wie ein Mittler zwischen damals und heute steht, ist darin ganz klassisch.) Wenn ich mir unsre großen Humanisten richtig vorstelle, so war es ihnen — wenn auch mit Einschluß <sic>alles</sic> möglichen Wirren der Menschenbrust — doch irgendwie um einen Kosmos, eine ruhende Ordnung, ein geschlossenes Gesetzbuch zu tun; jedenfalls hätten sie das Maß von geistiger Unordnung und Häßlichkeit, mit dem wir heute zu rechnen haben, als unerträglich erniedrigend empfunden.</p> 
+            <p>Bekannt ist, daß schon „unsre großen klassischen Geistesheroen“, so der Ausdruck verstattet ist, die Ohren zurücklegten, wenn diese Geistesrichtung sich hören machte. <persName ref="#pers_goethe">Goethe</persName>, der <persName ref="#pers_kant">Kant</persName> bewunderte, <persName ref="#pers_spinoza">Spinoza</persName> liebte und ein Naturforscher war, stand sich besser mit dem Verstand als die Goetheseelein von heute (mit seiner Intuition wird Mißbrauch getrieben; in den naturwissenschaftlichen Schriften findet sich durchaus nicht jene „andre Art des Erkennens“, für die er so oft als Eideshelfer angerufen wird); wohl aber hatte die Klassik keine Freundlichkeit für englische Webstühle, für Mathematik, für Mechanik und, wenn ich mich recht erinnere, auch nicht für <persName ref="#pers_locke">Locke</persName> und <persName ref="#pers_hume">Hume</persName>, deren — nun, man sagt Skepsis, sie ablehnte, aber es war wohl eigentlich nur eine Form jenes Geistes der Positivität, der mit den Naturwissenschaften, der Mathematik und der Industrie heraufkam und von der Klassik instinktiv als sie zersetzend empfunden wurde. (Noch <persName ref="#pers_hebbel">Hebbel</persName>, der sonst wie ein Mittler zwischen damals und heute steht, ist darin ganz klassisch.) Wenn ich mir unsre großen Humanisten richtig vorstelle, so war es ihnen — wenn auch mit Einschluß <sic>alles</sic> möglichen Wirren der Menschenbrust — doch irgendwie um einen Kosmos, eine ruhende Ordnung, ein geschlossenes Gesetzbuch zu tun; jedenfalls hätten sie das Maß von geistiger Unordnung und Häßlichkeit, mit dem wir heute zu rechnen haben, als unerträglich erniedrigend empfunden.</p> 
             <pb facs="https://digi.ub.uni-heidelberg.de/diglit/ganymed1922/0392/image"/>
             <p>Aber dieser abgelehnte Geist der selbstgenügsamen Faktizität in der Wissenschaft, der Statistik, der Maschinen, der Mathematik, des Pragmatismus und der Zahl, dieser Sandhaufen der Tatsachen und Ameisenhaufen der Menschlichkeit hat heute gesiegt.</p>
             <p>Leider oder nicht: die nachgeborenen Goetheseelein und Goetheselein müssen mit ihm rechnen lernen.</p>
@@ -109,19 +576,19 @@
          <div>
             <head>12</head> 
             <p>Jedoch wenn hier die Worte Pragmatismus und Positivismus gebraucht werden, so mögen sie nicht zu genau und nicht als philosophische Spezialbezeichnungen genommen werden. Gemeint ist keine Theorie, sondern eine Erscheinung des Lebens.</p> 
-            <p>Seit in der Renaissance sich die Physik von der scholastischen Spekulation weg zur Feststellung der Tatsachen und ihrer funktionalen Zusammenhänge gewandt hat, ist nicht etwa der Rationalismus entstanden — denn die Scholastik war ja auch rationalistisch —, sondern es fand einfach eine <foreign xml:lang="lat">restitutio in integrum</foreign> statt; die spekulativ entartete Rationalität wurde wieder auf den festen Antäusboden der Tatsachen gestellt, wobei sie allerdings eine Richtung erhielt, in der die Probleme für die Philosophie, ja selbst für die Mathematik vorwiegend durch die quantifizierenden Naturwissenschaften angeregt wurden. Gleich zu Beginn tritt die quantitative, die — um heute beliebte Bezeichnungen dafür anzuwenden, unheilige und ungeistige Betrachtungsweise wie ein Feuer auf. „Wahres Erkennen ist nur dort, wo Quanta erkannt werden“, schreibt <persName>Kepler</persName>. Der Portugiese <persName>Sanchez</persName> — gestorben im Jahr, wo <persName>Locke</persName> geboren wurde — fordert den aggresiven Geist der Beobachtung und des Experiments auch für die Philosophie. Der große <persName>Galilei</persName> — in der Auffassung vielseitiger als <persName>Kepler</persName> und im Beispiel eine Zeitwende —, selbst ein Künstler wie da Vinci teilen diesen Furor der Abkehr zur Positivität, <pb facs="https://digi.ub.uni-heidelberg.de/diglit/ganymed1922/0393/image"/>zur Sachlichkeit, zur Nüchternheit und zum Zeugnis des Verstandes undder Sinne.</p>
-            <p>Man muß das trennen von der Überspitzung, die es bald erhielt (<persName>Descartes</persName>), und muß sich heute, wo die Geisteswelt über die Fesseln einer „öden Mechanistik“ klagt, mit aller Eindringlichkeit vergegenwärtigen, daß es einst und für große Menschen die Gewalt und das Feuer eines neuen erlösenden Erlebnisses gehabt hat. </p>
+            <p>Seit in der Renaissance sich die Physik von der scholastischen Spekulation weg zur Feststellung der Tatsachen und ihrer funktionalen Zusammenhänge gewandt hat, ist nicht etwa der Rationalismus entstanden — denn die Scholastik war ja auch rationalistisch —, sondern es fand einfach eine <foreign xml:lang="lat">restitutio in integrum</foreign><note resp="#claude">Lateinisch „Wiederherstellung des ursprünglichen Zustands" – ursprünglich ein römisch-rechtlicher Begriff. Musil meint: die Renaissance habe das Denken nicht revolutioniert, sondern auf seinen vorscholastischen Tatsachen­boden zurückgeführt.</note> statt; die spekulativ entartete Rationalität wurde wieder auf den festen Antäusboden<note resp="#claude">Antaios (griech. Mythologie): Riese, Sohn der Erdgöttin Gaia, der unbesiegbar war, solange er den Boden berührte – Herakles tötete ihn, indem er ihn vom Boden hochhob. „Antäusboden der Tatsachen" meint also: die Vernunft hat nur Kraft, solange sie am Boden der Empirie verankert bleibt.</note> der Tatsachen gestellt, wobei sie allerdings eine Richtung erhielt, in der die Probleme für die Philosophie, ja selbst für die Mathematik vorwiegend durch die quantifizierenden Naturwissenschaften angeregt wurden. Gleich zu Beginn tritt die quantitative, die — um heute beliebte Bezeichnungen dafür anzuwenden, unheilige und ungeistige Betrachtungsweise wie ein Feuer auf. „Wahres Erkennen ist nur dort, wo Quanta erkannt werden“, schreibt <persName ref="#pers_kepler">Kepler</persName>. Der Portugiese <persName ref="#pers_sanches">Sanchez</persName> — gestorben im Jahr, wo <persName ref="#pers_locke">Locke</persName> geboren wurde<note resp="#claude">Francisco Sanches starb 1623, John Locke wurde 1632 geboren – Musil irrt hier um neun Jahre.</note> — fordert den aggresiven Geist der Beobachtung und des Experiments auch für die Philosophie. Der große <persName ref="#pers_galilei">Galilei</persName> — in der Auffassung vielseitiger als <persName ref="#pers_kepler">Kepler</persName> und im Beispiel eine Zeitwende —, selbst ein Künstler wie <persName ref="#pers_davinci">da Vinci</persName> teilen diesen Furor der Abkehr zur Positivität, <pb facs="https://digi.ub.uni-heidelberg.de/diglit/ganymed1922/0393/image"/>zur Sachlichkeit, zur Nüchternheit und zum Zeugnis des Verstandes undder Sinne.</p>
+            <p>Man muß das trennen von der Überspitzung, die es bald erhielt (<persName ref="#pers_descartes">Descartes</persName>), und muß sich heute, wo die Geisteswelt über die Fesseln einer „öden Mechanistik“ klagt, mit aller Eindringlichkeit vergegenwärtigen, daß es einst und für große Menschen die Gewalt und das Feuer eines neuen erlösenden Erlebnisses gehabt hat. </p>
          </div>
          <div>
             <head>13</head> 
             <p>Die Formel dafür lautet etwa: Mach Dir nichts vor. Verlaß Dich auf Deine eigenen Sinne. Greif immer bis auf den Stein! Es ist eine gewaltige Abstinenzbewegung von der Seele, durch die ein gewaltiger Seelenschwung in neuer Richtung entstand, und man darf sich nicht über das Feuer, die Kraft täuschen, die er noch in sich trägt.</p>
-            <p>Zwar ging auch hier die Entwicklung mehr in die Breite als in die Tiefe; die Tatsachenwissenschaften teilten sich bis zur Zersplitterung des Spezialistentums, die theoretischen Synthesen, trotzdem sie im einzelnen zu sehr großen Leistungen führten, hielten nicht Schritt, fast könnte man sagen, es etablierten sich alle Nachteile einer Demokratie von Tatsachen; der Berg, der Alpdruck schüttete sich auch hier auf, der schon die menschliche Leistung der Geschichte begrub. Aber es wird das fast immer ganz falsch so dargestellt, als sei es ein bloß negatives Kennzeichen unsrer Zeit, daß sie — abgekürzt zu sprechen — keine Philosophie habe, bloß als ob sie keine hervorzubringen vermöchte; es ist weit mehr ein auch positiv zu wertendes Zeichen, denn der pragmatische Mensch, der Kletterer an den festen Griffen der Tatsachen, verlacht, was ihm von den Kustoden als Philosophie angeboten wird. Diese Zeit hat keine Philosophie, weniger weil sie keine hervorzubringen vermag, als weil sie Angebote ausschlägt, die nicht zu den Tatsachen stimmen. (Wer ein Beispiel haben will, lese das zurückhaltend als naturphilosophischer Versuch bezeichnete Buch „Die physikalischen Gestalten in Ruhe und im stationären Zustand“ des jungen Berliner Philosophen <persName>Wolfgang Köhler</persName>, und wenn er die Kenntnisse hat, um es zu verstehen, so wird er erleben, wie sich vom Boden der Tat-<pb facs="https://digi.ub.uni-heidelberg.de/diglit/ganymed1922/0394/image" break="no" />sachenwissenschaften aus die Lösung uralter metaphysischer Schwierigkeiten schon andeutet.)</p> 
-            <p>Darin verwandt trotz allem Trennenden sind dem führenden geistigen Typus der Zeit die führenden praktischen, der Kaufmann und der Politiker. Auch der Kapitalismus hat als seelische Grundlage das nur mit den Tatsachen Rechnen, das sich nur auf sich selbst Verlassen, den Griff, das Arbeiten in festem Stein, die Selbständigkeit des so dastehenden Menschen; und die Öde außer Dienst. Die Politik gar, wie sie heute verstanden wird, ist die reinste Gegnerschaft gegen den Idealismus, fast seine Perversion. Der mit dem Menschen à la baisse spekulierende Mensch, der sich Realpolitiker nennt, hält für real nur die Niedrigkeiten des Menschen, das heißt, nur sie betrachtet er als verläßlich; er baut nicht auf Überzeugung, sondern stets nur auf Zwang und List. Was davon sich aber während des Kriegs und nachher in der scheußlichsten Fratze gezeigt hat, ist im Grunde kein andrer Geist als der, in welchem auch Ministerien eines und desselben Staats untereinander verkehren, sobald sie in einer Frage nicht die gleichen Interessen haben, und der, in welchem der smarte Kaufmann stets mit seinesgleichen umgeht. Am tiefsten Punkt dieser Hölle liegt — dem einzelnen gar nicht mehr bewußt — wie die Spitze eines Kegels die luziferische Mißachtung der Ohnmacht des Idealismus, die nicht nur den verkommenen, sondern so oft auch den stärksten Menschen unsrer Zeit eigentümlich ist.</p> 
+            <p>Zwar ging auch hier die Entwicklung mehr in die Breite als in die Tiefe; die Tatsachenwissenschaften teilten sich bis zur Zersplitterung des Spezialistentums, die theoretischen Synthesen, trotzdem sie im einzelnen zu sehr großen Leistungen führten, hielten nicht Schritt, fast könnte man sagen, es etablierten sich alle Nachteile einer Demokratie von Tatsachen; der Berg, der Alpdruck schüttete sich auch hier auf, der schon die menschliche Leistung der Geschichte begrub. Aber es wird das fast immer ganz falsch so dargestellt, als sei es ein bloß negatives Kennzeichen unsrer Zeit, daß sie — abgekürzt zu sprechen — keine Philosophie habe, bloß als ob sie keine hervorzubringen vermöchte; es ist weit mehr ein auch positiv zu wertendes Zeichen, denn der pragmatische Mensch, der Kletterer an den festen Griffen der Tatsachen, verlacht, was ihm von den Kustoden als Philosophie angeboten wird. Diese Zeit hat keine Philosophie, weniger weil sie keine hervorzubringen vermag, als weil sie Angebote ausschlägt, die nicht zu den Tatsachen stimmen. (Wer ein Beispiel haben will, lese das zurückhaltend als naturphilosophischer Versuch bezeichnete <bibl ref="#bibl_koehler_gestalten">Buch „Die physikalischen Gestalten in Ruhe und im stationären Zustand“</bibl> des jungen Berliner Philosophen <persName ref="#pers_koehler">Wolfgang Köhler</persName>, und wenn er die Kenntnisse hat, um es zu verstehen, so wird er erleben, wie sich vom Boden der Tat-<pb facs="https://digi.ub.uni-heidelberg.de/diglit/ganymed1922/0394/image" break="no" />sachenwissenschaften aus die Lösung uralter metaphysischer Schwierigkeiten schon andeutet.)</p> 
+            <p>Darin verwandt trotz allem Trennenden sind dem führenden geistigen Typus der Zeit die führenden praktischen, der Kaufmann und der Politiker. Auch der Kapitalismus hat als seelische Grundlage das nur mit den Tatsachen Rechnen, das sich nur auf sich selbst Verlassen, den Griff, das Arbeiten in festem Stein, die Selbständigkeit des so dastehenden Menschen; und die Öde außer Dienst. Die Politik gar, wie sie heute verstanden wird, ist die reinste Gegnerschaft gegen den Idealismus, fast seine Perversion. Der mit dem Menschen à la baisse<note resp="#claude">Französisch „auf fallende Kurse spekulieren" – Börsenmetaphorik. Der „Realpolitiker" wettet auf das Schlechteste im Menschen, weil er nur dieses für „real" hält. Musil entlarvt damit den scheinbaren Realismus politischen Zynismus als Pessimismus-Geschäft.</note> spekulierende Mensch, der sich Realpolitiker nennt, hält für real nur die Niedrigkeiten des Menschen, das heißt, nur sie betrachtet er als verläßlich; er baut nicht auf Überzeugung, sondern stets nur auf Zwang und List. Was davon sich aber während des Kriegs und nachher in der scheußlichsten Fratze gezeigt hat, ist im Grunde kein andrer Geist als der, in welchem auch Ministerien eines und desselben Staats untereinander verkehren, sobald sie in einer Frage nicht die gleichen Interessen haben, und der, in welchem der smarte Kaufmann stets mit seinesgleichen umgeht. Am tiefsten Punkt dieser Hölle liegt — dem einzelnen gar nicht mehr bewußt — wie die Spitze eines Kegels die luziferische Mißachtung der Ohnmacht des Idealismus, die nicht nur den verkommenen, sondern so oft auch den stärksten Menschen unsrer Zeit eigentümlich ist.</p> 
             <p>Es ist ebensoviel von dem tiefsten Selbstvertrauen der Zeit in ihr wie von der verzweifelten Situation. Es ist ein Unterwasserschwimmen in einem Meer von Realität, ein verbissenes Noch-etwas-länger-den-Atem-Anhalten: freilich mit der Gefahr behaftet, daß der Schwimmer nie wieder auftaucht.</p>
          </div>
          <div>
             <head>14</head> 
-            <p>Das Amt, diesen Menschen zu bändigen und zu Gleichmaß und Stete zu führen, in diesem Chaos Ordnung zu schaffen, das Amt der Sinngebung, der Lebensausdeutung zu übernehmen, war — im Nebenamt! — nichts als die Geschichte da. Sie besaß nicht die Regriffe dafür. Geschichtsphilosophie <pb facs="https://digi.ub.uni-heidelberg.de/diglit/ganymed1922/0395/image" />wird abgelehnt, rein historische Kategorien haben sich noch nicht zur Genüge gebildet: die Ordnungsbegriffe des Lebens fehlen; daher werden hinten herum und unkontrolliert subjektive, gemutmaßte Bestandstücke der Geschichtsphilosophie wieder eingeführt. Begriffe wie Vernunft, Fortschritt, Humanität, Notwendigkeit beherrschten spukend das Lebensbild, gemeinsam mit ungeaichten oder höchstens von der opinio communis geaichten ethischen Wertschätzungen; Ordnungsschein über einem Chaos. So konnte anfangs die bekannte Wendung zur historischen Immanenz wie eine Erlösung wirken. Es erschien anfangs wie ein Fortschritt, was die Geschichte jetzt lehrte, den „Zeiten“ überhaupt keine bestimmte Denkweise entgegenzubringen, sondern „Urteil und Maß lediglich aus ihnen selbst zu gewinnen“. Versenken, einleben, Erscheinungen aus ihrer eigenen Sphäre heraus verstehn, keine Synthese von außen aufdrängen: Nie war eine Zeit so bereit und geschickt, das zu tun, wie unsre. Die Folge war mit <persName>Eucken</persName> zu sprechen — Abschwächung des eignen Wollens und Wesens durch Beflissenheit, sich fremder Art anzuschmiegen. Just das Rechte in einem Entwicklungsabschnitt, der drängend voll eigner Probleme ist!</p> 
+            <p>Das Amt, diesen Menschen zu bändigen und zu Gleichmaß und Stete zu führen, in diesem Chaos Ordnung zu schaffen, das Amt der Sinngebung, der Lebensausdeutung zu übernehmen, war — im Nebenamt! — nichts als die Geschichte da. Sie besaß nicht die Regriffe dafür. Geschichtsphilosophie <pb facs="https://digi.ub.uni-heidelberg.de/diglit/ganymed1922/0395/image" />wird abgelehnt, rein historische Kategorien haben sich noch nicht zur Genüge gebildet: die Ordnungsbegriffe des Lebens fehlen; daher werden hinten herum und unkontrolliert subjektive, gemutmaßte Bestandstücke der Geschichtsphilosophie wieder eingeführt. Begriffe wie Vernunft, Fortschritt, Humanität, Notwendigkeit beherrschten spukend das Lebensbild, gemeinsam mit ungeaichten oder höchstens von der opinio communis geaichten ethischen Wertschätzungen; Ordnungsschein über einem Chaos. So konnte anfangs die bekannte Wendung zur historischen Immanenz wie eine Erlösung wirken. Es erschien anfangs wie ein Fortschritt, was die Geschichte jetzt lehrte, den „Zeiten“ überhaupt keine bestimmte Denkweise entgegenzubringen, sondern „Urteil und Maß lediglich aus ihnen selbst zu gewinnen“. Versenken, einleben, Erscheinungen aus ihrer eigenen Sphäre heraus verstehn, keine Synthese von außen aufdrängen: Nie war eine Zeit so bereit und geschickt, das zu tun, wie unsre. Die Folge war mit <persName ref="#pers_eucken">Eucken</persName> zu sprechen — Abschwächung des eignen Wollens und Wesens durch Beflissenheit, sich fremder Art anzuschmiegen. Just das Rechte in einem Entwicklungsabschnitt, der drängend voll eigner Probleme ist!</p> 
          </div>
          <div>
             <head>15</head> 
@@ -129,34 +596,34 @@
             <pb facs="https://digi.ub.uni-heidelberg.de/diglit/ganymed1922/0396/image" />
             <p>Man ist dabei so mutlos im direkten Beurteilen und Gestalten geworden, daß man die Gewohnheit annahm, selbst die Gegenwart historisch zu sehn; sobald ein neuer Ismus auftritt, glaubt man, ein neuer Mensch sei da, und mit Schluß jedes Schuljahrs hebt eine neue Epoche an!</p> 
             <p>Alles, was zum Geist gehört, befindet sich daher heute in größter Unordnung. Der Geist der Tatsachen und der Zahlen wird bekämpft — traditionell und kaum mehr der Gründe bewußt —, ohne daß man ihm mehr als die Negation entgegensetzt. Denn wenn man verkündet — und wer verkündete nicht etwas davon?! —, unsrer Zeit fehle die Synthese oder die Kultur oder die Religiosität oder die Gemeinschaft, so ist das kaum mehr als ein Lob der „guten alten Zeit“, da niemand zu sagen vermöchte, wie eine Kultur oder eine Religion oder eine Gemeinschaft heute aussehen müßten, falls sie die Laboratorien und Flugmaschinen und den Mammutsgesellschaftskörper wirklich in ihre Synthese aufnehmen und nicht bloß als überwunden voraussetzen wollten. Man verlangt damit bloß, daß sich die Gegenwart selbst aufgeben soll. Unsicherheit, Energielosigkeit, pessimistische Farbe zeichnet alles aus, was heute Seele ist.</p> 
-            <p>Naturgemäß spiegelt sich das in einer unerhörten geistigen Einzelkrämerei. Unsre Zeit beherbergt nebeneinander und völlig unausgeglichen die Gegensätze von Individualismus und Gemeinschaftssinn, von Aristokratismus und Sozialismus, vom Pazifismus und Martialismus, von Kulturschwärmerei und Zivilisationsbetrieb, von Nationalismus und Internationalismus, von Religion und Naturwissenschaft, von Intuition und Rationalismus und ungezählt viele mehr. Man verzeihe das Gleichnis, aber der Zeitmagen ist verdorben und stößt in tausend Mischungen immer wieder Brocken der gleichen Speisen auf, ohne sie zu verdauen. Schon äußerlich betrachtet, läßt solche Antitypik — solches Entfalten der Probleme in Paare von Gegensätzen, solche Vielheit von Entweder-Oder-Fragestellungen — erkennen, daß hier nicht genug geistige Arbeit geleistet wird; es liegt in jedem Entweder-Oder eine gewisse Naivität, wie sie wohl dem wertenden Menschen ansteht, aber nicht dem denkenden, dem sich die Gegensätze in Reihen von Übergängen auflösen. Und in der Tat entspricht diesen Fragestellungen praktisch ein aufs äußerste getriebener <pb facs="https://digi.ub.uni-heidelberg.de/diglit/ganymed1922/0397/image" />Grüppchenkollektivismus in unsrem geistigen Bild. Jede Lesegemeinschaft hat ihren Dichter; die politischen Parteien der Landwirte und der Handarbeiter haben verschiedene Philosophien; es gibt vielleicht hundert Verlage in Deutschland mit einem gefühlhaft mehr oder weniger fest organisierten Leserkreis; der Klerus hat sein Netz, aber auch die Steinerianer haben ihre Millionen, und die Universitäten ihre Geltung: ich habe in der Tat einmal in einem Gewerkschaftsblatt der Kellner etwas von der Weltanschauung der Gasthausgehilfen gelesen, die immer hochgehalten werden müsse.</p> 
-            <p>Es ist ein babylonisches Narrenbaus; aus tausend Fenstern schreien tausend verschiedene Stimmen, Gedanken, Musiken gleichzeitig auf den Wanderer ein, und es ist klar, daß das Individuum dabei der Tummelplatz anarchischer Motive wird, und die Moral mit dem Geist sich zersetzt.</p> 
-            <p>Im Keller dieses Narrenhauses aber hämmert der hephaistische Schaffenswille, Urträume der Menschheit werden verwirklicht wie der Flug, der Siebenmeilenstiefel, das Hindurchblicken durch feste Körper und unerhört viele solcher Phantasien, die in früheren Jahrhunderten seligste Traummagie waren; unsere Zeit schafft diese Wunder, aber sie fühlt sie nicht mehr.</p> 
+            <p>Naturgemäß spiegelt sich das in einer unerhörten geistigen Einzelkrämerei. Unsre Zeit beherbergt nebeneinander und völlig unausgeglichen die Gegensätze von Individualismus und Gemeinschaftssinn, von Aristokratismus und Sozialismus, vom Pazifismus und Martialismus, von Kulturschwärmerei und Zivilisationsbetrieb, von Nationalismus und Internationalismus, von Religion und Naturwissenschaft, von Intuition und Rationalismus und ungezählt viele mehr. Man verzeihe das Gleichnis, aber der Zeitmagen ist verdorben und stößt in tausend Mischungen immer wieder Brocken der gleichen Speisen auf, ohne sie zu verdauen. Schon äußerlich betrachtet, läßt solche Antitypik — solches Entfalten der Probleme in Paare von Gegensätzen, solche Vielheit von Entweder-Oder-Fragestellungen — erkennen, daß hier nicht genug geistige Arbeit geleistet wird; es liegt in jedem Entweder-Oder eine gewisse Naivität, wie sie wohl dem wertenden Menschen ansteht, aber nicht dem denkenden, dem sich die Gegensätze in Reihen von Übergängen auflösen. Und in der Tat entspricht diesen Fragestellungen praktisch ein aufs äußerste getriebener <pb facs="https://digi.ub.uni-heidelberg.de/diglit/ganymed1922/0397/image" />Grüppchenkollektivismus in unsrem geistigen Bild. Jede Lesegemeinschaft hat ihren Dichter; die politischen Parteien der Landwirte und der Handarbeiter haben verschiedene Philosophien; es gibt vielleicht hundert Verlage in <placeName ref="#pl_deutschland">Deutschland</placeName> mit einem gefühlhaft mehr oder weniger fest organisierten Leserkreis; der Klerus hat sein Netz, aber auch die Steinerianer<note resp="#claude">Anhänger der Anthroposophie Rudolf Steiners (1861–1925), einer um 1900 entstandenen esoterisch-spirituellen Weltanschauungsbewegung. In den 1920er Jahren in Mitteleuropa weit verbreitet (Waldorfschulen, anthroposophische Medizin). Musils Beispiel für seinen Befund vom „Grüppchenkollektivismus" konkurrierender Welt­anschauungen.</note> haben ihre Millionen, und die Universitäten ihre Geltung: ich habe in der Tat einmal in einem Gewerkschaftsblatt der Kellner etwas von der Weltanschauung der Gasthausgehilfen gelesen, die immer hochgehalten werden müsse.</p> 
+            <p>Es ist ein babylonisches Narrenbaus<note resp="#claude">Verschränkung zweier Bilder: der biblischen Sprachverwirrung beim Turmbau zu Babel (Gen 11) und des Narrenhauses (Irrenanstalt) als Sinnbild des Chaos. „Narrenbaus" ist Druckfehler der Erstausgabe für „Narrenhaus".</note>; aus tausend Fenstern schreien tausend verschiedene Stimmen, Gedanken, Musiken gleichzeitig auf den Wanderer ein, und es ist klar, daß das Individuum dabei der Tummelplatz anarchischer Motive wird, und die Moral mit dem Geist sich zersetzt.</p> 
+            <p>Im Keller dieses Narrenhauses aber hämmert der hephaistische<note resp="#claude">Hephaistos (griech. Mythologie): Gott des Feuers und der Schmiede, der unter den Vulkanen seine Werkstatt hat. Sinnbild für die rein technische, materielle Schaffenskraft, die unter dem geistigen Chaos der Gegenwart unbeirrt weiterwirkt.</note> Schaffenswille, Urträume der Menschheit werden verwirklicht wie der Flug, der Siebenmeilenstiefel, das Hindurchblicken durch feste Körper und unerhört viele solcher Phantasien, die in früheren Jahrhunderten seligste Traummagie waren; unsere Zeit schafft diese Wunder, aber sie fühlt sie nicht mehr.</p> 
             <p>Sie ist eine Zeit der Erfüllung, und Erfüllungen sind immer Enttäuschungen; es fehlt ihr an Sehnsucht, an etwas, das sie noch nicht kann, während es ihr am Herz nagt.</p> 
          </div>
          <div>
             <head>16</head> 
-            <p>Ich glaube, daß der Krieg ausbrach wie eine Krankheit an diesem Gesellschaftskörper; eine ungeheure, ohne Zugang zur Seele arbeitende Energie brach sich diesen brandigen Fistelgang zu ihr hin. Ich habe allerdings eine Warnung vor solcher Auffassung des Kriegs als einer europäischen Kulturkrisis gelesen, was eine spezifisch deutsche Anschauung sein soll (<persName>Robert Curtius</persName> unter Berufung auf andre in dem sehr lesenswerten Heft: Der Syndikalismus der geistigen Arbeiter in Frankreich), aber es kommt doch wohl darauf an, welchen Inhalt man dieser Vor-<pb facs="https://digi.ub.uni-heidelberg.de/diglit/ganymed1922/0401/image" break="no" />Stellung gibt. Der Krieg mag tausend verschiedene Ursachen gehabt haben, aber es ist gewiß nicht zu leugnen, daß jede von ihnen — Nationalismus, Patriotismus, wirtschaftlicher Imperialismus, Mentalität der Generale und Diplomaten wie auch alle andren — an bestimmte geistige Voraussetzungen geknüpft ist, die doch eine gemeinsame und dann eben mitentscheidende Situation kennzeichnen.</p> 
+            <p>Ich glaube, daß der Krieg ausbrach wie eine Krankheit an diesem Gesellschaftskörper; eine ungeheure, ohne Zugang zur Seele arbeitende Energie brach sich diesen brandigen Fistelgang zu ihr hin. Ich habe allerdings eine Warnung vor solcher Auffassung des Kriegs als einer europäischen Kulturkrisis gelesen, was eine spezifisch deutsche Anschauung sein soll (<persName ref="#pers_curtius">Robert Curtius</persName><note resp="#claude">Musil nennt nur den Rufnamen; gemeint ist Ernst Robert Curtius.</note> unter Berufung auf andre in dem sehr lesenswerten Heft: <bibl ref="#bibl_curtius_syndikalismus">Der Syndikalismus der geistigen Arbeiter in Frankreich</bibl>), aber es kommt doch wohl darauf an, welchen Inhalt man dieser Vor-<pb facs="https://digi.ub.uni-heidelberg.de/diglit/ganymed1922/0401/image" break="no" />Stellung gibt. Der Krieg mag tausend verschiedene Ursachen gehabt haben, aber es ist gewiß nicht zu leugnen, daß jede von ihnen — Nationalismus, Patriotismus, wirtschaftlicher Imperialismus, Mentalität der Generale und Diplomaten wie auch alle andren — an bestimmte geistige Voraussetzungen geknüpft ist, die doch eine gemeinsame und dann eben mitentscheidende Situation kennzeichnen.</p> 
             <p>Vor allem war ein sehr bezeichnendes Symptom der Katastrophe zugleich Ausdruck einer bestimmten ideologischen Lage: das völlige Gewährenlassen gegenüber den an der Staatsmaschine stehenden Gruppen von Spezialisten, so daß man wie im Schlafwagen fuhr und erst durch den Zusammenstoß erwachte. An dieses Gewährenlassen sind nicht nur die „denkenden Bürger“ gegenüber den „handelnden Organen“ des Staats gewöhnt, sondern auch die nebeneinander dahinlebenden Ideologien, welche sich gegenseitig anbellen, aber nicht beißen. Es ist die Kehrseite der Einordnung des einzelnen in die Gesellschaft, und man würde ein Narr vor Überbürdung, wenn man jede Gewissensfrage selbst lösen wollte; aber andrerseits gibt es deren welche, die man so wenig dem „Fachmann“ überläßt wie das Heiraten oder die Ewigkeit, und solche Fälle müssen sich durch ein deutlich wahrnehmbares Signal auszeichnen. So lag auch in der Art, wie die Welt auf den Krieg zutrieb, vor allem ein Mangel an geistiger Organisation; das Nichternstnehmen der Anzeichen und hintreibenden Kräfte, ebenso wie auch der gegenwirkenden Kräfte ging aus einer Situation hervor, wo ideologische Fragen in ihrer Unordnung und Windigkeit für „schöngeistig“ galten, während die realpolitischen Mächte wenigstens eine gewisse bürgerliche Rechtsfähigkeit vor ihnen voraushatten.</p>
             <p>Ein andres Kennzeichen war der Umfang, den die Katastrophe sofort annahm. Dieses plötzliche, ungeheure Umsichfressen des Feuers erscheint nur möglich, wo alles vorbereitet war und sich nach Erdbeben, Feuersbrunst und Gefühlsstürmen sehnte; wer den Ausbruch des Kriegs in voller Stärke erlebt hat, versteht ihn als die Flucht vor dem Frieden.</p> 
           </div>
           <div>
             <pb facs="https://digi.ub.uni-heidelberg.de/diglit/ganymed1922/0402/image" />
             <head>17</head>
-            <p>Es wäre natürlich unsinnig, eine so umfassende Katastrophe auf eine individuelle Formel zurückführen zu wollen. Wir wissen überhaupt noch wenig von der Soziologie des Kriegs, es hat Kriege in allen Kulturen gegeben, und schon deshalb ist es schwer, einen bestimmten Krieg als die Katastrophe einer bestimmten kulturellen Situation anzusehn; zweifellos wird Krieg als etwas Traditionelles, man kann fast sagen als eine periodische Institution hingenommen. Anders steht es jedoch um die Frage, wie ein Krieg in einer Zeit ausbrechen kann, deren Geist – ausgenommen die Knockabouts — entschieden pazifistisch war. Ferner gibt es unter den Kriegen viele, die sozusagen nur geduldet waren, und von ihnen sozial verschieden sind jene, die wie Brände um sich fraßen. Heute sind schlichtende Kräfte aus dem Bereich des common sense am Werk, um den Krieg als nutzlos und unvernünftig zu entwerten, und das sind gewiß schwere Argumente in einer auf Nutzen und Vernunft gerichteten Zeit; aber ich glaube, diese Art Pazifisten unterschätzt das explosiv-seelische Moment, das zu Kriegen jener zweiten Art gehört, das offenbar menschliche Bedürfnis, von Zeit zu Zeit das Dasein zu zerreißen und in die Luft zu schleudern, sehend, wo es bleibe. Dieses Bedürfnis nach „metaphysischem Krach“, wenn der Ausdruck erlaubt ist, häuft sich in Friedenszeiten als unbefriedigter Rest an. Ich vermag darin in Fällen, wo weit und breit keine Unterdrückung, keine wirtschaftliche Verzweiflung, sondern rings nur Gedeihen vorhanden war, nichts zu sehn als eine Revolution der Seele gegen die Ordnung; in manchen Zeiten führt sie zu religiösen Erhebungen, in andren zu kriegerischen.</p>
-            <p>Sieht man die Erscheinung von dieser Seite an, so muß man hinzufügen, daß es sich nicht (nämlich nur scheinbar) um den Zusammenbruch einer bestimmten Ideologie und Mentalität handelt — etwa der bürgerlichen jetzt oder 1618 der katholischen —, um den Inhalt einer Ideologie also, sondern um das periodische Zusammenbrechen aller Ideologien. Sie befinden sich stets in einem Mißverhältnis zum Leben, und dieses befreit sich in wiederkehrenden Krisen von ihnen wie wachsende Weichtiere von ihren zu eng gewordenen Panzern.</p>
+            <p>Es wäre natürlich unsinnig, eine so umfassende Katastrophe auf eine individuelle Formel zurückführen zu wollen. Wir wissen überhaupt noch wenig von der Soziologie des Kriegs, es hat Kriege in allen Kulturen gegeben, und schon deshalb ist es schwer, einen bestimmten Krieg als die Katastrophe einer bestimmten kulturellen Situation anzusehn; zweifellos wird Krieg als etwas Traditionelles, man kann fast sagen als eine periodische Institution hingenommen. Anders steht es jedoch um die Frage, wie ein Krieg in einer Zeit ausbrechen kann, deren Geist – ausgenommen die Knockabouts<note resp="#claude">Englisch „Schläger, Raufbolde"; im Vaudeville-Theater Komiker, die handgreifliche Slapstick-Schlägereien aufführten. Musil meint die wenigen vor 1914 offen kriegsbegeisterten Militaristen, deren Aggression er ironisch als Bühnen­komik einstuft.</note> — entschieden pazifistisch war. Ferner gibt es unter den Kriegen viele, die sozusagen nur geduldet waren, und von ihnen sozial verschieden sind jene, die wie Brände um sich fraßen. Heute sind schlichtende Kräfte aus dem Bereich des common sense am Werk, um den Krieg als nutzlos und unvernünftig zu entwerten, und das sind gewiß schwere Argumente in einer auf Nutzen und Vernunft gerichteten Zeit; aber ich glaube, diese Art Pazifisten unterschätzt das explosiv-seelische Moment, das zu Kriegen jener zweiten Art gehört, das offenbar menschliche Bedürfnis, von Zeit zu Zeit das Dasein zu zerreißen und in die Luft zu schleudern, sehend, wo es bleibe. Dieses Bedürfnis nach „metaphysischem Krach“, wenn der Ausdruck erlaubt ist, häuft sich in Friedenszeiten als unbefriedigter Rest an. Ich vermag darin in Fällen, wo weit und breit keine Unterdrückung, keine wirtschaftliche Verzweiflung, sondern rings nur Gedeihen vorhanden war, nichts zu sehn als eine Revolution der Seele gegen die Ordnung; in manchen Zeiten führt sie zu religiösen Erhebungen, in andren zu kriegerischen.</p>
+            <p>Sieht man die Erscheinung von dieser Seite an, so muß man hinzufügen, daß es sich nicht (nämlich nur scheinbar) um den Zusammenbruch einer bestimmten Ideologie und Mentalität handelt — etwa der bürgerlichen jetzt oder 1618<note resp="#claude">1618 begann mit dem Prager Fenstersturz der Dreißigjährige Krieg – für Musil das frühneuzeitliche Pendant zu 1914: der Zusammenbruch einer ganzen ideologischen Weltordnung (damals der katholisch-konfessionellen).</note> der katholischen —, um den Inhalt einer Ideologie also, sondern um das periodische Zusammenbrechen aller Ideologien. Sie befinden sich stets in einem Mißverhältnis zum Leben, und dieses befreit sich in wiederkehrenden Krisen von ihnen wie wachsende Weichtiere von ihren zu eng gewordenen Panzern.</p>
             <pb facs="https://digi.ub.uni-heidelberg.de/diglit/ganymed1922/0403/image" />
             <p>Das ist heute, trotz der Müdigkeit nach dem kaum überwundenen Krieg, schon wieder nahen zu sehn. Nicht nur der französische Geist zeigt seinen Machthabern gegenüber ein schlimmeres „Gewährenlassen“ als je einer vor dem Krieg, auch bei uns haben sich durch die neuen Erlebnisse nur die Inhalte geändert, die verworrene unsichere Art der Reaktion und Aktion ist die gleiche geblieben.</p> 
          </div>
          <div>
             <head>18</head> 
             <p>Keine Werte standen fest, in nichts lag Verantwortung, das Leben wurde mit Wollust in die Flammen geworfen: es scheint dennoch falsch zu sein, daß man mit einer Wiedergutmachung, einer restitutio in integrum, mit der Forderung von mehr Verantwortung, Güte, Christentum, Menschlichkeit, kurz mit irgend einem Mehr von dem, was vorher zu wenig war, die Situation bessern könne; denn es fehlte nicht an der Idealität, sondern schon an den Vorbedingungen für sie. Dies ist nach meinem Glauben die Erkenntnis, welche sich unsere Zeit einbrennen müßte! Die Lösung liegt weder im Warten auf eine neue Ideologie, noch im Kampf der einander heute bestreitenden, sondern in der Schaffung gesellschaftlicher Bedingungen, unter denen ideologische Bemühungen überhaupt Stabilität und Tiefgang haben. Es fehlt uns an der Funktion, nicht an Inhalten!</p> 
-            <p>Niemals wieder wird eine einheitliche Ideologie, eine „Kultur“ in unsrer weißen Gesellschaft von selbst kommen; mag sie in Frühzeiten dagewesen sein (obgleich man sich das wahrscheinlich zu schön vorstellt): das Wasser fließt den Berg hinab, aber nicht hinauf. Eine gedeihende Gesellschaft befindet sich geistig in einem fortschreitenden Selbstzersetzungsprozeß. Immer mehr Menschen und Meinungen beteiligen sich an der allgemeinen Ideenbildung, und immer neue Ideenquellen werden durch Eindringen in frühere Zeiten und Verbindung zwischen entlegenen Ursprungsörtern aufgeschlossen. Was man Zivilisation im üblen Sinn nennt, ist ja hauptsächlich nichts als die Belastung des einzelnen mit Fragen, von denen er kaum die Worte kennt (man denke an die politische Demokratie oder an die Zeitung), weshalb es ganz natürlich ist, daß er in einer <pb facs="https://digi.ub.uni-heidelberg.de/diglit/ganymed1922/0404/image" />vollkommen pathologischen Weise darauf reagiert; wir muten heute einem beliebigen Kaufmann geistige Entscheidungen zu, deren gewissenhafte Wahl einem Leibniz nicht möglich wäre! Da aber kaum bestritten werden kann, daß jeder der von da und dort sich kreuzenden Ideen ein gewisser Lebenswert einwohnt, Unterdrückung Verlust, und nur Aufnahme Gewinn ist, so liegt ein ungeheures Organisationsproblem darin beschlossen, daß man die Auseinandersetzung und Verknüpfung ideologischer Elemente nicht dem Zufall überlasse, sondern fördere. Diese notwendige Funktion der Gesellschaft existiert heute nur auf wissenschaftlichem, also reinem Verstandesgebiet; auf geistigem Gebiet ist sie nicht einmal von den Schaffenden als nötig erkannt.</p> 
-            <p>Im Gegenteil, es ist gerade in geistigen Kreisen (wie hier abgekürzt im Gegensatz zur eindeutigen Verstandesarbeit gesagt werden möge) kein Vorurteil so hartnäckig wie dieses, daß an aller Mißentwicklung der Zivilisation und vor allem an der seelischen Zersetzung der Verstand schuld sei, dem sie fröhne. Nun mag man dem Verstand alle möglichen Einseitigkeiten und schlimmen Nebenwirkungen nachsagen, wenn man aber behauptet, daß er zersetzend wirke, so meint man damit nie etwas andres, als daß er Werte, die ehedem ohne Riß und gefühlssicher galten, allmählig auflöst: aber das kann er nur dort, wo sie in ihren Gefühlsvoraussetzungen ohnedies schon gespalten sind; es ist nichts, was in seiner Natur läge, sondern es liegt in ihrer! Er selbst ist seinem Wesen nach eben so bindend wie zerlegend, ja er ist wohl die stärkste bindende Kraft in den menschlichen Beziehungen, was merkwürdig oft von schöngeistigen Anklägern übersehen wird. Es kann sich also gar nicht um anderes handeln als um ein Mißverhältnis, ein Aneinandervorbeileben von Verstand und Seele. Wir haben nicht zuviel Verstand und zuwenig Seele, sondern wir haben zuwenig Verstand in den Fragen der Seele. Der Mißstand, dessen er geziehen wird, heißt in Wahrheit: es geht der Gewohnheitsweg unsrer Gedanken unter Ausschaltung des Ich von Gedanke zu Gedanke und Tatsache zu Tatsache, wir denken und handeln nicht über unser Ich. Darin liegt ja das Wesen unserer Objektivität, sie verbindet die Dinge untereinander, und selbst wo sie uns zu ihnen in Be-<pb facs="https://digi.ub.uni-heidelberg.de/diglit/ganymed1922/0405/image" break="no" />ziehung setzt oder—wie in der Psychologie — uns selbst zum Gegenstand hat, tut sie es unter Ausschluß der Persönlichkeit. Es gibt die Objektivität gewissermaßen das Innerliche an den Dingen preis, das Allgemeingültige ist unpersönlich oder — nach einer sehr glücklichen indirekten Kennzeichnung von <persName>Walther Strich</persName> —: für eine Wahrheit kann man nicht mit der Person einstehn. Objektivität stiftet daher keine menschliche Ordnung, sondern nur eine sachliche.</p>
-            <p>In der Tat tritt schon in jener früher erwähnten breiten Übergangszone zur Neuzeit, während deren das Tatsachendenken seinen Aufschwung nahm, dieser Protest dagegen mit aller Heftigkeit auf; Religion sei nicht Theologie, sagen ungefähr Schwenckfeld, Sebastian Franck und Valentin Weigel gemeinsam gegen den abgeirrten Mystiker Luther, sondern sie sei „Erneuerung des ganzen Menschen“. Es ist das der Protest des Gefühls, Willens, Lebenden, Wechselbaren, insgesamt der Menschlichkeit, was sich da gegen die Theologie, das Wissen, als den festen und erstarrten Niederschlag abgrenzt. Und dieses ist auch immer — wenn man sie aller theologischen Verbindungen und mit ihnen angenommenen Spezialitäten entkleidet — die Triebfeder aller Mystik gewesen; alle jene Worte wie Liebe, Schau, Erweckung und ihresgleichen in ihrer tiefen Unbestimmtheit und zarten Fülle bezeichnen nichts als eine tiefere Einbettung des Denkens in die Gefühlssphäre, eine persönlichere Beziehung zum Erlebenden.</p>
-            <p>Einen verwandten Erlebensgehalt und ein ähnliches Verhältnis zum Verstand hat aber auch das ganze Schrifttum unmystischer Lebensweisheit von Kungfutse bis Emerson und weiter, ja man kann behaupten, daß an dieser Linie auch eine Grenze zwischen Moral und Ethik läuft. Moral ist ihrem Wesen als Vorschrift nach an wiederholbare Erlebnisse gebunden, und ebensolche sind es, welche die Rationalität kennzeichnen, denn der Begriff kann sich nur an der Eindeutigkeit und — in übertragenem Sinn — Wiederholbarkeit ansetzen; so besteht ein tiefer Zusammenhang zwischen dem zivilisatorischen Charakter der Moral und des Verstandes, während das eigentlich ethische Erlebnis wie das der Liebe oder der Einkehr oder der Demut selbst dort, wo es sozial ist, etwas sehr schwer zu Übertragen-<pb facs="https://digi.ub.uni-heidelberg.de/diglit/ganymed1922/0406/image" break="no" />des, ganz Persönliches und fast Unsoziales ist. „Auch in Christus war ein äußerer und ein innerer Mensch, und alles, was er in bezug auf äußere Dinge tat, tat er vom äußeren Menschen aus, und stand dabei der innere Mensch in unbeweglicher Abgeschiedenheit“, sagt Eckehart. Was man in unsrer heutigen Literatur Ethik nennt, ist gewöhnlich ein schmales Fundament von Ethik und ein hohes Haus von Moral darüber.</p> 
+            <p>Niemals wieder wird eine einheitliche Ideologie, eine „Kultur“ in unsrer weißen Gesellschaft von selbst kommen; mag sie in Frühzeiten dagewesen sein (obgleich man sich das wahrscheinlich zu schön vorstellt): das Wasser fließt den Berg hinab, aber nicht hinauf. Eine gedeihende Gesellschaft befindet sich geistig in einem fortschreitenden Selbstzersetzungsprozeß. Immer mehr Menschen und Meinungen beteiligen sich an der allgemeinen Ideenbildung, und immer neue Ideenquellen werden durch Eindringen in frühere Zeiten und Verbindung zwischen entlegenen Ursprungsörtern aufgeschlossen. Was man Zivilisation im üblen Sinn nennt, ist ja hauptsächlich nichts als die Belastung des einzelnen mit Fragen, von denen er kaum die Worte kennt (man denke an die politische Demokratie oder an die Zeitung), weshalb es ganz natürlich ist, daß er in einer <pb facs="https://digi.ub.uni-heidelberg.de/diglit/ganymed1922/0404/image" />vollkommen pathologischen Weise darauf reagiert; wir muten heute einem beliebigen Kaufmann geistige Entscheidungen zu, deren gewissenhafte Wahl einem <persName ref="#pers_leibniz">Leibniz</persName> nicht möglich wäre! Da aber kaum bestritten werden kann, daß jeder der von da und dort sich kreuzenden Ideen ein gewisser Lebenswert einwohnt, Unterdrückung Verlust, und nur Aufnahme Gewinn ist, so liegt ein ungeheures Organisationsproblem darin beschlossen, daß man die Auseinandersetzung und Verknüpfung ideologischer Elemente nicht dem Zufall überlasse, sondern fördere. Diese notwendige Funktion der Gesellschaft existiert heute nur auf wissenschaftlichem, also reinem Verstandesgebiet; auf geistigem Gebiet ist sie nicht einmal von den Schaffenden als nötig erkannt.</p> 
+            <p>Im Gegenteil, es ist gerade in geistigen Kreisen (wie hier abgekürzt im Gegensatz zur eindeutigen Verstandesarbeit gesagt werden möge) kein Vorurteil so hartnäckig wie dieses, daß an aller Mißentwicklung der Zivilisation und vor allem an der seelischen Zersetzung der Verstand schuld sei, dem sie fröhne. Nun mag man dem Verstand alle möglichen Einseitigkeiten und schlimmen Nebenwirkungen nachsagen, wenn man aber behauptet, daß er zersetzend wirke, so meint man damit nie etwas andres, als daß er Werte, die ehedem ohne Riß und gefühlssicher galten, allmählig auflöst: aber das kann er nur dort, wo sie in ihren Gefühlsvoraussetzungen ohnedies schon gespalten sind; es ist nichts, was in seiner Natur läge, sondern es liegt in ihrer! Er selbst ist seinem Wesen nach eben so bindend wie zerlegend, ja er ist wohl die stärkste bindende Kraft in den menschlichen Beziehungen, was merkwürdig oft von schöngeistigen Anklägern übersehen wird. Es kann sich also gar nicht um anderes handeln als um ein Mißverhältnis, ein Aneinandervorbeileben von Verstand und Seele. Wir haben nicht zuviel Verstand und zuwenig Seele, sondern wir haben zuwenig Verstand in den Fragen der Seele. Der Mißstand, dessen er geziehen wird, heißt in Wahrheit: es geht der Gewohnheitsweg unsrer Gedanken unter Ausschaltung des Ich von Gedanke zu Gedanke und Tatsache zu Tatsache, wir denken und handeln nicht über unser Ich. Darin liegt ja das Wesen unserer Objektivität, sie verbindet die Dinge untereinander, und selbst wo sie uns zu ihnen in Be-<pb facs="https://digi.ub.uni-heidelberg.de/diglit/ganymed1922/0405/image" break="no" />ziehung setzt oder—wie in der Psychologie — uns selbst zum Gegenstand hat, tut sie es unter Ausschluß der Persönlichkeit. Es gibt die Objektivität gewissermaßen das Innerliche an den Dingen preis, das Allgemeingültige ist unpersönlich oder — nach einer sehr glücklichen indirekten Kennzeichnung von <persName ref="#pers_strich" cert="medium">Walther Strich</persName> —: für eine Wahrheit kann man nicht mit der Person einstehn. Objektivität stiftet daher keine menschliche Ordnung, sondern nur eine sachliche.</p>
+            <p>In der Tat tritt schon in jener früher erwähnten breiten Übergangszone zur Neuzeit, während deren das Tatsachendenken seinen Aufschwung nahm, dieser Protest dagegen mit aller Heftigkeit auf; Religion sei nicht Theologie, sagen ungefähr <persName ref="#pers_schwenckfeld">Schwenckfeld</persName>, <persName ref="#pers_franck">Sebastian Franck</persName> und <persName ref="#pers_weigel">Valentin Weigel</persName> gemeinsam gegen den abgeirrten Mystiker <persName ref="#pers_luther">Luther</persName>,<note resp="#claude">Musils Charakterisierung Luthers als „abgeirrter Mystiker“ greift die spiritualistisch-mystische Reformationsströmung um Schwenckfeld, Franck und Weigel auf, die Luthers Theologie als Erstarrung kritisierte.</note> sondern sie sei „Erneuerung des ganzen Menschen“. Es ist das der Protest des Gefühls, Willens, Lebenden, Wechselbaren, insgesamt der Menschlichkeit, was sich da gegen die Theologie, das Wissen, als den festen und erstarrten Niederschlag abgrenzt. Und dieses ist auch immer — wenn man sie aller theologischen Verbindungen und mit ihnen angenommenen Spezialitäten entkleidet — die Triebfeder aller Mystik gewesen; alle jene Worte wie Liebe, Schau, Erweckung und ihresgleichen in ihrer tiefen Unbestimmtheit und zarten Fülle bezeichnen nichts als eine tiefere Einbettung des Denkens in die Gefühlssphäre, eine persönlichere Beziehung zum Erlebenden.</p>
+            <p>Einen verwandten Erlebensgehalt und ein ähnliches Verhältnis zum Verstand hat aber auch das ganze Schrifttum unmystischer Lebensweisheit von <persName ref="#pers_konfuzius">Kungfutse</persName> bis <persName ref="#pers_emerson">Emerson</persName> und weiter, ja man kann behaupten, daß an dieser Linie auch eine Grenze zwischen Moral und Ethik läuft. Moral ist ihrem Wesen als Vorschrift nach an wiederholbare Erlebnisse gebunden, und ebensolche sind es, welche die Rationalität kennzeichnen, denn der Begriff kann sich nur an der Eindeutigkeit und — in übertragenem Sinn — Wiederholbarkeit ansetzen; so besteht ein tiefer Zusammenhang zwischen dem zivilisatorischen Charakter der Moral und des Verstandes, während das eigentlich ethische Erlebnis wie das der Liebe oder der Einkehr oder der Demut selbst dort, wo es sozial ist, etwas sehr schwer zu Übertragen-<pb facs="https://digi.ub.uni-heidelberg.de/diglit/ganymed1922/0406/image" break="no" />des, ganz Persönliches und fast Unsoziales ist. „Auch in <persName ref="#pers_jesus">Christus</persName> war ein äußerer und ein innerer Mensch, und alles, was er in bezug auf äußere Dinge tat, tat er vom äußeren Menschen aus, und stand dabei der innere Mensch in unbeweglicher Abgeschiedenheit“, sagt <persName ref="#pers_eckhart">Eckehart</persName>. Was man in unsrer heutigen Literatur Ethik nennt, ist gewöhnlich ein schmales Fundament von Ethik und ein hohes Haus von Moral darüber.</p> 
             <p>Was es tatsächlich heute an Ethik gibt, lebt sehr unzulänglich in der Kunst, in der Essayistik und im Chaos privater Beziehungen. Die Musik wälzt Gefühle hin und her, in denen die Gedanken von Welt und Seele wurzeln, die Malerei sucht vom „Objekt“ — dem Bazillenträger der Rationalität — sich loszuheben, die Dichtung bietet das Bild eines stagnierenden, in immer wiederholten Ansätzen fortschrittslosen Zustands der Seele, alles in allem ist es eine dumpfe, sich zu unbeständigen Erscheinungen überspitzende Unzufriedenheit, eine gärende Masse, in der immer wieder die gleichen Brocken an die Oberfläche stoßen, ohne daß der Chemiker käme und die Mischung klärte.</p> 
-            <p>Unsre Geistesart ist vorläufig noch gar nicht darauf eingestellt, diesen Zustand zu ändern. Die Geschichte — wie gesagt, selbst der Hilfe durch Ordnungsbegriffe bedürftig — ist nur mißbrauchtes Hilfsmittel, sie zu schaffen, und der Humanismus, den wir treiben, ist ebenso höchstens im Nebenamt vergleichend, Lebenselemente herauslösend, ethisch, sucht vielmehr möglichst das Ganze von Persönlichkeiten, Zeiten und Kulturen zu verstehn und als Muster aufzustellen. Wenn man <persName>Goethe</persName> oder <persName>Lessing</persName> kennen lehrt als die in sich geschlossenen einmaligen Totalitäten, so hat das Exemplarische dieser großen Existenzen gewiß „Bildungswert“, aber allein vermittelt ist es im Grunde doch nichts andres, als wenn man in der Physik nur die Biographien <persName>Keplers</persName> oder <persName>Newtons</persName> vorbrächte. Der wesentliche Sachwert wird vernachlässigt, neben dem Biographischen fehlt das bewußt Ideographische und wird mehr oder weniger wie im Leben so in der Schule der persönlichen Willkür und Neigung überlassen. Wenn <persName>Goethe</persName> aber gedichtet hat: „Ist auf deinem Psalter / Vater der Liebe ein Ton / Seinem Ohr vernehmlich, / So erquicke sein Herz!“ — so steht das doch nicht nur allein da, und nicht nur im Zusammen-<pb facs="https://digi.ub.uni-heidelberg.de/diglit/ganymed1922/0407/image" break="no" />hang mit dem jungen, etwas lästigen Herrn <persName>Plessing</persName> und der sonstigen Goethebiographie, und nicht nur in der Klassik und der literarischen Tradition, sondern es bildet auch eine Masche in der Reihe der Menschenliebe oder der Güte, welche Reihen durch die Vorstellungswelt von Anbeginn bis heute laufen, und durch den Platz in dieser Reihe wird es erst wesentlich bestimmt.</p>
+            <p>Unsre Geistesart ist vorläufig noch gar nicht darauf eingestellt, diesen Zustand zu ändern. Die Geschichte — wie gesagt, selbst der Hilfe durch Ordnungsbegriffe bedürftig — ist nur mißbrauchtes Hilfsmittel, sie zu schaffen, und der Humanismus, den wir treiben, ist ebenso höchstens im Nebenamt vergleichend, Lebenselemente herauslösend, ethisch, sucht vielmehr möglichst das Ganze von Persönlichkeiten, Zeiten und Kulturen zu verstehn und als Muster aufzustellen. Wenn man <persName ref="#pers_goethe">Goethe</persName> oder <persName ref="#pers_lessing">Lessing</persName> kennen lehrt als die in sich geschlossenen einmaligen Totalitäten, so hat das Exemplarische dieser großen Existenzen gewiß „Bildungswert“, aber allein vermittelt ist es im Grunde doch nichts andres, als wenn man in der Physik nur die Biographien <persName ref="#pers_kepler">Keplers</persName> oder <persName ref="#pers_newton">Newtons</persName> vorbrächte. Der wesentliche Sachwert wird vernachlässigt, neben dem Biographischen fehlt das bewußt Ideographische und wird mehr oder weniger wie im Leben so in der Schule der persönlichen Willkür und Neigung überlassen. Wenn <persName ref="#pers_goethe">Goethe</persName> aber gedichtet hat: „Ist auf deinem Psalter / Vater der Liebe ein Ton / Seinem Ohr vernehmlich, / So erquicke sein Herz!“<note resp="#claude">Strophe aus Goethes Gedicht „Harzreise im Winter“ (1777), inspiriert durch die Begegnung mit dem hypochondrischen Studenten Friedrich Victor Leberecht Plessing.</note> — so steht das doch nicht nur allein da, und nicht nur im Zusammen-<pb facs="https://digi.ub.uni-heidelberg.de/diglit/ganymed1922/0407/image" break="no" />hang mit dem jungen, etwas lästigen Herrn <persName ref="#pers_plessing">Plessing</persName> und der sonstigen Goethebiographie, und nicht nur in der Klassik und der literarischen Tradition, sondern es bildet auch eine Masche in der Reihe der Menschenliebe oder der Güte, welche Reihen durch die Vorstellungswelt von Anbeginn bis heute laufen, und durch den Platz in dieser Reihe wird es erst wesentlich bestimmt.</p>
             <p>Solche Ordnung der Kunst, Ethik und Mystik, das ist der Gefühls- und Ideenwelt, vergleicht allerdings und analysiert und faßt zusammen und ist insoweit rational und den stärksten Instinkten unsrer Zeit wesensverwandt, aber sie ist kein Widerspruch gegen die Seele; sie hat ihr eigenes Ziel, und dieses ist nicht jene Eindeutigkeit, bei der sich etwa Ethos zur Moral verdichtet oder Gefühl zur kausalen Psychologie, sondern eine Übersicht der Gründe, der Verknüpfungen, der Einschränkungen, der fließenden Redeutungen menschlicher Motive und Handlungen, — eine Auslegung des Lebens.</p> 
             <p>Es mag dieser Ausklang einer Retrachtung unserer Situation in die Forderung einer Disziplin sonderbar sein: aber eine Zeit, die solche Arbeit nicht geleistet und solche Disziplin nicht erworben hat, wird nie zur Lösung großer Ordnungsaufgaben fähig werden.</p> 
          </div>   
