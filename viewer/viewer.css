@@ -61,6 +61,18 @@ html, body { margin: 0; padding: 0; min-height: 100%; background: var(--bg); col
 .dot.person { background: var(--person); }
 .dot.place { background: var(--place); }
 .dot.bibl { background: var(--bibl); }
+.meta-links { display: flex; gap: 0.5rem; align-items: center; }
+.meta-link {
+  font-size: 0.8rem;
+  color: var(--muted);
+  text-decoration: none;
+  padding: 0.25rem 0.55rem;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  white-space: nowrap;
+  transition: border-color 0.12s, color 0.12s, background-color 0.12s;
+}
+.meta-link:hover { color: var(--accent); border-color: var(--accent); background: rgba(43,58,85,0.04); }
 
 /* ─── Layout ───────────────────────────────────────────── */
 main {
