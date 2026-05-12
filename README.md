@@ -9,13 +9,11 @@ Source: <https://doi.org/10.11588/diglit.45237.18>
 ```
 .
 ├── das_hilflose_europa.xml    # TEI P5 source (validates against tei_all)
-├── viewer/                    # Static HTML/JS reading interface
-│   ├── index.html
-│   ├── viewer.css
-│   └── viewer.js
+├── index.html                 # Reading interface (loads TEI client-side)
+├── viewer.css
+├── viewer.js
 ├── assets/                    # Musil portrait + Open Graph banner
 ├── favicon.svg                # M monogram favicon
-├── index.html                 # Root redirect → viewer/ (for GitHub Pages)
 ├── .nojekyll                  # Disables Jekyll on GitHub Pages
 └── README.md
 ```
@@ -61,7 +59,7 @@ Single-page reading interface that loads the TEI client-side (no build step, no 
 Once Pages is enabled for this repository, the viewer is served at:
 <https://ottosmops.github.io/Das-hilflose-Europa/>
 
-To enable: *Settings → Pages → Build and deployment → Deploy from a branch → `main`, folder `/ (root)`*. The root `index.html` redirects to `viewer/`; `.nojekyll` disables Jekyll processing.
+To enable: *Settings → Pages → Build and deployment → Deploy from a branch → `main`, folder `/ (root)`*. `.nojekyll` disables Jekyll processing.
 
 ### Local
 

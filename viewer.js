@@ -2,7 +2,7 @@
 
 const TEI_NS = "http://www.tei-c.org/ns/1.0";
 const XML_NS = "http://www.w3.org/XML/1998/namespace";
-const TEI_PATH = "../das_hilflose_europa.xml";
+const TEI_PATH = "das_hilflose_europa.xml";
 
 const state = {
   xml: null,
