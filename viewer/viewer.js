@@ -614,6 +614,22 @@ function wireToolbar() {
     clearTimeout(timer);
     timer = setTimeout(() => doSearch(search.value.trim()), 180);
   });
+  search.addEventListener("keydown", (ev) => {
+    if (ev.key === "Escape") {
+      search.value = "";
+      doSearch("");
+      search.blur();
+    }
+  });
+  document.addEventListener("keydown", (ev) => {
+    if (ev.key === "Escape" && document.activeElement !== search) {
+      const panel = document.getElementById("search-results");
+      if (panel && !panel.hidden) {
+        search.value = "";
+        doSearch("");
+      }
+    }
+  });
 }
 
 function doSearch(q) {
@@ -624,7 +640,10 @@ function doSearch(q) {
     parent.replaceChild(document.createTextNode(m.textContent), m);
     parent.normalize();
   }
-  if (!q || q.length < 2) return;
+  if (!q || q.length < 2) {
+    renderSearchResults("", []);
+    return;
+  }
 
   const re = new RegExp(escapeRegExp(q), "gi");
   const walker = document.createTreeWalker(reading, NodeFilter.SHOW_TEXT, {
@@ -639,7 +658,6 @@ function doSearch(q) {
   let n;
   while ((n = walker.nextNode())) textNodes.push(n);
 
-  let firstMatch = null;
   const notesToOpen = new Set();
   for (const node of textNodes) {
     const matches = [...node.nodeValue.matchAll(re)];
@@ -652,7 +670,6 @@ function doSearch(q) {
       mk.className = "match";
       mk.textContent = m[0];
       frag.appendChild(mk);
-      if (!firstMatch) firstMatch = mk;
       lastIndex = m.index + m[0].length;
     }
     frag.appendChild(document.createTextNode(node.nodeValue.slice(lastIndex)));
@@ -661,7 +678,113 @@ function doSearch(q) {
     if (noteBody) notesToOpen.add(noteBody);
   }
   notesToOpen.forEach(nb => nb.classList.add("open"));
-  if (firstMatch) firstMatch.scrollIntoView({ behavior: "smooth", block: "center" });
+
+  const allMarks = [...reading.querySelectorAll("mark.match")];
+  renderSearchResults(q, allMarks);
+  if (allMarks.length) flashCurrentMatch(allMarks[0], /*scroll=*/true);
+}
+
+function renderSearchResults(query, marks) {
+  const panel = document.getElementById("search-results");
+  panel.innerHTML = "";
+  if (!query) { panel.hidden = true; return; }
+
+  const header = document.createElement("div");
+  header.className = "sr-header";
+  const left = document.createElement("div");
+  left.innerHTML = marks.length
+    ? `<span class="sr-count">${marks.length}</span> Treffer für „${escapeHtml(query)}“`
+    : `Keine Treffer für „${escapeHtml(query)}“`;
+  header.appendChild(left);
+  const close = document.createElement("button");
+  close.className = "sr-close";
+  close.title = "Suche zurücksetzen (Esc)";
+  close.textContent = "×";
+  close.addEventListener("click", () => {
+    document.getElementById("search").value = "";
+    doSearch("");
+  });
+  header.appendChild(close);
+  panel.appendChild(header);
+
+  if (!marks.length) {
+    const empty = document.createElement("div");
+    empty.className = "sr-empty";
+    panel.appendChild(empty);
+    panel.hidden = false;
+    return;
+  }
+
+  const list = document.createElement("ol");
+  list.className = "sr-list";
+  marks.forEach(mark => {
+    const li = document.createElement("li");
+    li.className = "sr-item";
+
+    const section = document.createElement("span");
+    section.className = "sr-section";
+    section.textContent = sectionLabelFor(mark);
+    li.appendChild(section);
+
+    const snippet = document.createElement("span");
+    snippet.className = "sr-snippet";
+    const { before, after } = snippetContext(mark);
+    snippet.innerHTML =
+      `…${escapeHtml(before)}<b class="sr-match">${escapeHtml(mark.textContent)}</b>${escapeHtml(after)}…`;
+    li.appendChild(snippet);
+
+    li.addEventListener("click", () => flashCurrentMatch(mark, true));
+    list.appendChild(li);
+  });
+  panel.appendChild(list);
+  panel.hidden = false;
+}
+
+function sectionLabelFor(mark) {
+  // Note body → label by note number; otherwise nearest § N section head
+  const noteBody = mark.closest(".note-body");
+  if (noteBody) return `Anm. ${noteBody.dataset.idx}`;
+  let el = mark.parentElement;
+  while (el && el !== document.body) {
+    if (el.classList?.contains("tei-div")) {
+      const head = el.querySelector(":scope > .tei-head");
+      if (head) return head.textContent.replace(/^\s*§\s*/, "§ ").trim();
+      if (el.classList.contains("preface")) return "Vorrede";
+    }
+    el = el.parentElement;
+  }
+  return "—";
+}
+
+function snippetContext(mark, radius = 38) {
+  const container = mark.closest("p, .note-body, .tei-div") || mark.parentElement;
+  let before = "", after = "", passed = false;
+  (function walk(node) {
+    if (node === mark) { passed = true; return; }
+    if (node.nodeType === Node.TEXT_NODE) {
+      if (!passed) before += node.nodeValue;
+      else        after  += node.nodeValue;
+      return;
+    }
+    if (node.nodeType !== Node.ELEMENT_NODE) return;
+    if (node.classList?.contains("resp-tag") || node.classList?.contains("pb")) return;
+    for (const child of node.childNodes) {
+      walk(child);
+      if (passed && after.length > radius * 2) return;
+    }
+  })(container);
+  before = before.replace(/\s+/g, " ").trimStart();
+  after  = after.replace(/\s+/g, " ").trimEnd();
+  return {
+    before: before.length > radius ? before.slice(-radius) : before,
+    after:  after.length  > radius ? after.slice(0, radius) : after,
+  };
+}
+
+function flashCurrentMatch(mark, scroll) {
+  document.querySelectorAll(".reading mark.match.current").forEach(m => m.classList.remove("current"));
+  mark.classList.add("current");
+  if (scroll) mark.scrollIntoView({ behavior: "smooth", block: "center" });
 }
 
 // ─── Utility ──────────────────────────────────────────────────────────

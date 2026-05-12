@@ -22,13 +22,16 @@
 
 * { box-sizing: border-box; }
 
-html, body { margin: 0; padding: 0; height: 100%; background: var(--bg); color: var(--ink); font-family: var(--serif); }
+html, body { margin: 0; padding: 0; min-height: 100%; background: var(--bg); color: var(--ink); font-family: var(--serif); }
 
 /* ─── Top bar ──────────────────────────────────────────── */
-.topbar {
+.topbar-wrap {
   position: sticky;
   top: 0;
   z-index: 10;
+  background: var(--paper);
+}
+.topbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -233,6 +236,72 @@ main {
 
 /* Search highlight */
 .reading mark.match { background: #fff3a3; padding: 0 1px; border-radius: 2px; }
+.reading mark.match.current { background: #ffb938; outline: 2px solid #ffb938; }
+
+/* Search results panel */
+.search-results {
+  background: #fffdf6;
+  border-bottom: 1px solid var(--rule);
+  padding: 0.6rem 1.25rem 0.8rem;
+  max-height: 280px;
+  overflow-y: auto;
+  font-family: var(--sans);
+  font-size: 0.85rem;
+}
+.search-results[hidden] { display: none; }
+.sr-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  color: var(--muted);
+  font-size: 0.8rem;
+  margin-bottom: 0.4rem;
+}
+.sr-header .sr-count { color: var(--ink); font-weight: 600; }
+.sr-close {
+  background: transparent;
+  border: none;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0 0.4rem;
+  line-height: 1;
+}
+.sr-close:hover { color: var(--ink); }
+.sr-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+.sr-item {
+  display: flex;
+  gap: 0.6rem;
+  align-items: baseline;
+  padding: 0.25rem 0.4rem;
+  border-radius: 3px;
+  cursor: pointer;
+  line-height: 1.4;
+}
+.sr-item:hover { background: rgba(43,58,85,0.06); }
+.sr-section {
+  flex: 0 0 auto;
+  min-width: 2.6rem;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  font-weight: 500;
+}
+.sr-snippet {
+  flex: 1;
+  color: var(--ink);
+}
+.sr-snippet b.sr-match { background: #fff3a3; padding: 0 1px; border-radius: 2px; font-weight: 600; }
+.sr-empty { padding: 0.2rem 0; color: var(--muted); }
 
 /* Active scroll target highlight */
 .reading .target-flash {
