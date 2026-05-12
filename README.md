@@ -13,10 +13,14 @@ Source: <https://doi.org/10.11588/diglit.45237.18>
 │   ├── index.html
 │   ├── viewer.css
 │   └── viewer.js
+├── assets/                    # Musil portrait + Open Graph banner
+├── favicon.svg                # M monogram favicon
 ├── index.html                 # Root redirect → viewer/ (for GitHub Pages)
 ├── .nojekyll                  # Disables Jekyll on GitHub Pages
 └── README.md
 ```
+
+Photo of Musil: Wikimedia Commons, [File:Musil.jpg](https://commons.wikimedia.org/wiki/File:Musil.jpg), 1930, public domain.
 
 ## TEI markup
 
