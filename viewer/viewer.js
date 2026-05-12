@@ -117,6 +117,7 @@ function parseBibl(el) {
     authorRef: teiAll(el, "author")[0]?.getAttribute("ref") || "",
     date,
     digitalUrl: ref ? ref.getAttribute("target") : "",
+    note: teiAll(el, "note")[0]?.textContent.trim() || "",
     cert: el.getAttribute("cert") || "",
     idnos: parseIdnos(el),
   };
